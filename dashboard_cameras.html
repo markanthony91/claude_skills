@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Monitoramento de Câmeras</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .stat-value {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .stat-change {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .positive {
+            color: #10b981;
+        }
+
+        .negative {
+            color: #ef4444;
+        }
+
+        .stores-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .store-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .store-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f3f4f6;
+        }
+
+        .store-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .status-badge {
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .status-ok {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .status-warning {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .status-critical {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .camera-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            margin-bottom: 8px;
+            background: #f9fafb;
+            border-radius: 8px;
+            transition: background 0.2s ease;
+        }
+
+        .camera-row:hover {
+            background: #f3f4f6;
+        }
+
+        .camera-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .camera-label {
+            font-weight: 600;
+            color: #374151;
+            min-width: 40px;
+        }
+
+        .camera-area {
+            color: #6b7280;
+            font-size: 13px;
+        }
+
+        .camera-size {
+            font-weight: 500;
+            color: #111827;
+        }
+
+        .camera-bar {
+            width: 100px;
+            height: 6px;
+            background: #e5e7eb;
+            border-radius: 3px;
+            overflow: hidden;
+            margin: 0 10px;
+        }
+
+        .camera-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+            transition: width 0.3s ease;
+        }
+
+        .camera-bar-fill.warning {
+            background: linear-gradient(90deg, #f59e0b 0%, #d97706 100%);
+        }
+
+        .camera-bar-fill.critical {
+            background: linear-gradient(90deg, #ef4444 0%, #dc2626 100%);
+        }
+
+        .refresh-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        .refresh-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(102, 126, 234, 0.6);
+        }
+
+        .refresh-btn:active {
+            transform: translateY(0);
+        }
+
+        .filter-bar {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            border: 2px solid #e5e7eb;
+            background: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        .filter-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .filter-btn:hover {
+            border-color: #667eea;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: white;
+            font-size: 18px;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: rgba(255,255,255,0.9);
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        .pulsing {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎥 Dashboard de Monitoramento de Câmeras</h1>
+            <p class="subtitle">Sistema de Vigilância BK - Monitoramento em Tempo Real</p>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">🏪</div>
+                <div class="stat-label">Total de Lojas</div>
+                <div class="stat-value" id="total-stores">...</div>
+                <div class="stat-change positive">↗ Todas monitoradas</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">✅</div>
+                <div class="stat-label">Lojas OK</div>
+                <div class="stat-value positive" id="stores-ok">...</div>
+                <div class="stat-change positive" id="stores-ok-pct">...</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">⚠️</div>
+                <div class="stat-label">Com Problemas</div>
+                <div class="stat-value negative" id="stores-problems">...</div>
+                <div class="stat-change negative" id="stores-problems-pct">...</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">📊</div>
+                <div class="stat-label">Saúde do Sistema</div>
+                <div class="stat-value" id="system-health">...</div>
+                <div class="stat-change" id="system-health-text">...</div>
+            </div>
+        </div>
+
+        <div class="filter-bar">
+            <button class="filter-btn active" onclick="filterStores('all')">Todas (133)</button>
+            <button class="filter-btn" onclick="filterStores('ok')">✅ OK (132)</button>
+            <button class="filter-btn" onclick="filterStores('problems')">⚠️ Problemas (1)</button>
+            <button class="refresh-btn" onclick="loadData()">🔄 Atualizar Dados</button>
+        </div>
+
+        <div id="stores-container" class="stores-grid">
+            <div class="loading pulsing">Carregando dados das câmeras...</div>
+        </div>
+
+        <div class="last-updated" id="last-updated"></div>
+    </div>
+
+    <script>
+        let storesData = null;
+        let currentFilter = 'all';
+
+        async function loadData() {
+            try {
+                // Simulate loading from JSON report
+                const response = await fetch('visual_camera_report.json');
+                const data = await response.json();
+
+                storesData = data.stores;
+                updateStats(data);
+                renderStores(storesData);
+                updateLastUpdated(data.generated_at);
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('stores-container').innerHTML =
+                    '<div class="loading">❌ Erro ao carregar dados. Execute: ./inspecionar problemas</div>';
+            }
+        }
+
+        function updateStats(data) {
+            const totalStores = data.total_stores;
+            const problemStores = data.problem_stores;
+            const okStores = totalStores - problemStores;
+            const okPct = (okStores / totalStores * 100).toFixed(1);
+            const problemPct = (problemStores / totalStores * 100).toFixed(1);
+
+            document.getElementById('total-stores').textContent = totalStores;
+            document.getElementById('stores-ok').textContent = okStores;
+            document.getElementById('stores-ok-pct').textContent = `${okPct}% do total`;
+            document.getElementById('stores-problems').textContent = problemStores;
+            document.getElementById('stores-problems-pct').textContent = `${problemPct}% do total`;
+
+            const health = okPct >= 99 ? '99.2%' : `${okPct}%`;
+            const healthText = okPct >= 99 ? 'Excelente' : okPct >= 95 ? 'Bom' : 'Requer atenção';
+            const healthClass = okPct >= 99 ? 'positive' : okPct >= 95 ? '' : 'negative';
+
+            document.getElementById('system-health').textContent = health;
+            document.getElementById('system-health').className = `stat-value ${healthClass}`;
+            document.getElementById('system-health-text').textContent = `↗ ${healthText}`;
+            document.getElementById('system-health-text').className = `stat-change ${healthClass}`;
+        }
+
+        function renderStores(stores) {
+            const container = document.getElementById('stores-container');
+
+            if (!stores || stores.length === 0) {
+                container.innerHTML = '<div class="loading">Nenhuma loja encontrada</div>';
+                return;
+            }
+
+            const filtered = stores.filter(store => {
+                if (currentFilter === 'all') return true;
+                if (currentFilter === 'ok') return !store.has_problems;
+                if (currentFilter === 'problems') return store.has_problems;
+                return true;
+            });
+
+            container.innerHTML = filtered.map(store => {
+                const status = store.has_problems ? 'critical' :
+                               store.max_deviation > 20 ? 'warning' : 'ok';
+                const statusText = status === 'ok' ? 'OK' :
+                                 status === 'warning' ? 'Atenção' : 'Crítico';
+
+                return `
+                    <div class="store-card">
+                        <div class="store-header">
+                            <div class="store-name">${store.store}</div>
+                            <span class="status-badge status-${status}">${statusText}</span>
+                        </div>
+
+                        ${renderCamera('P1', 'Menu (Pedidos)', store.p1_avg, store.p1_dev, store.store_avg)}
+                        ${renderCamera('P2', 'Pagamento (Caixa)', store.p2_avg, store.p2_dev, store.store_avg)}
+                        ${renderCamera('P3', 'Retirada (Entrega)', store.p3_avg, store.p3_dev, store.store_avg)}
+
+                        ${store.has_problems ? `
+                            <div style="margin-top: 15px; padding: 12px; background: #fef2f2; border-left: 4px solid #ef4444; border-radius: 4px;">
+                                <strong style="color: #991b1b;">Ações Necessárias:</strong>
+                                <ul style="margin: 8px 0 0 20px; color: #991b1b; font-size: 13px;">
+                                    ${store.problems.map(p => `
+                                        <li>${p.camera} - ${p.area}: ${p.deviation.toFixed(1)}% ${p.direction}</li>
+                                    `).join('')}
+                                </ul>
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderCamera(label, area, avgSize, deviation, storeAvg) {
+            const barWidth = Math.min((avgSize / storeAvg) * 100, 100);
+            const barClass = deviation > 60 ? 'critical' : deviation > 40 ? 'warning' : '';
+            const icon = deviation > 60 ? '🔴' : deviation > 40 ? '🟠' : deviation > 20 ? '🟡' : '🟢';
+
+            return `
+                <div class="camera-row">
+                    <div class="camera-info">
+                        <span>${icon}</span>
+                        <span class="camera-label">${label}</span>
+                        <span class="camera-area">${area}</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <div class="camera-bar">
+                            <div class="camera-bar-fill ${barClass}" style="width: ${barWidth}%"></div>
+                        </div>
+                        <span class="camera-size">${avgSize.toFixed(1)} KB</span>
+                    </div>
+                </div>
+            `;
+        }
+
+        function filterStores(filter) {
+            currentFilter = filter;
+
+            // Update active button
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            renderStores(storesData);
+        }
+
+        function updateLastUpdated(timestamp) {
+            const date = new Date(timestamp);
+            const formatted = date.toLocaleString('pt-BR', {
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            });
+            document.getElementById('last-updated').textContent =
+                `Última atualização: ${formatted}`;
+        }
+
+        // Auto-refresh every 5 minutes
+        setInterval(loadData, 5 * 60 * 1000);
+
+        // Load data on page load
+        loadData();
+    </script>
+</body>
+</html>

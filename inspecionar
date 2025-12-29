@@ -1,0 +1,76 @@
+#!/bin/bash
+################################################################################
+# Inspetor Visual de Câmeras - Wrapper Script
+# Facilita a inspeção visual de câmeras P1/P2/P3
+################################################################################
+
+SCRIPT_DIR="/home/marcelo/sistemas"
+INSPECTOR="$SCRIPT_DIR/inspect_cameras_visual.py"
+
+# Colors
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+show_help() {
+    cat << EOF
+${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}
+${GREEN}INSPETOR VISUAL DE CÂMERAS${NC}
+${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}
+
+${YELLOW}USO:${NC}
+
+  ./inspecionar                              # Todas as lojas (resumo)
+  ./inspecionar problemas                    # Apenas lojas com problemas
+  ./inspecionar loja "Nome_da_Loja"          # Loja específica
+  ./inspecionar help                         # Esta ajuda
+
+${YELLOW}EXEMPLOS:${NC}
+
+  ./inspecionar problemas
+  ./inspecionar loja "Marginal_Tiete_Pte_Anhanguera"
+  ./inspecionar loja "BH_Andre_Cavalcanti"
+
+${YELLOW}INTERPRETAÇÃO DOS ÍCONES:${NC}
+
+  🟢 Verde    = OK (desvio < 20%)
+  🟡 Amarelo  = Atenção (desvio 20-40%)
+  🟠 Laranja  = Alto (desvio 40-60%)
+  🔴 Vermelho = Crítico (desvio > 60%)
+
+${YELLOW}POSIÇÕES DAS CÂMERAS:${NC}
+
+  P1 = Menu (área de pedidos)
+  P2 = Pagamento (caixa)
+  P3 = Retirada (entrega do pedido)
+
+${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}
+EOF
+}
+
+# Check arguments
+if [ "$1" = "help" ] || [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
+    show_help
+    exit 0
+fi
+
+if [ "$1" = "problemas" ]; then
+    echo -e "${YELLOW}🔍 Analisando apenas lojas com problemas...${NC}\n"
+    python3 "$INSPECTOR" --problems-only
+
+elif [ "$1" = "loja" ]; then
+    if [ -z "$2" ]; then
+        echo -e "${RED}❌ Erro: Especifique o nome da loja${NC}"
+        echo "Uso: ./inspecionar loja \"Nome_da_Loja\""
+        exit 1
+    fi
+
+    echo -e "${YELLOW}🔍 Inspecionando loja: $2${NC}\n"
+    python3 "$INSPECTOR" --store "$2"
+
+else
+    echo -e "${YELLOW}🔍 Analisando todas as lojas (exibindo top 20)...${NC}\n"
+    python3 "$INSPECTOR"
+fi

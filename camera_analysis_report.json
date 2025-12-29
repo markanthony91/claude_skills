@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "generated_at": "2025-12-29T20:21:46.779647",
+    "total_stores": 133,
+    "total_files": 3522,
+    "analysis_type": "Camera Position Consistency Check"
+  },
+  "camera_positions": {
+    "P1_Menu_Pedidos": {
+      "description": "Câmera do menu de pedidos",
+      "total_files": 1177,
+      "avg_size_kb": 64.03884262823917,
+      "median_size_kb": 63.87109375,
+      "std_dev_kb": 14.184012994501666
+    },
+    "P2_Pagamento_Caixa": {
+      "description": "Câmera do pagamento/caixa",
+      "total_files": 1172,
+      "avg_size_kb": 59.796922494933874,
+      "median_size_kb": 59.1044921875,
+      "std_dev_kb": 12.796663094281259
+    },
+    "P3_Retirada_Entrega": {
+      "description": "Câmera da retirada/entrega",
+      "total_files": 1173,
+      "avg_size_kb": 64.6400688672208,
+      "median_size_kb": 64.298828125,
+      "std_dev_kb": 14.054445351899673
+    }
+  },
+  "camera_issues": {
+    "total_stores_with_issues": 1,
+    "details": [
+      {
+        "store": "Marginal_Tiete_Pte_Anhanguera",
+        "p1_avg": 14.90234375,
+        "p2_avg": 84.0908203125,
+        "p3_avg": 69.8359375,
+        "store_avg": 56.2763671875,
+        "problem_cameras": [
+          {
+            "camera": "P1",
+            "area": "Menu (Pedidos)",
+            "avg_size": 14.90234375,
+            "expected": 56.2763671875,
+            "deviation_pct": 73.5193572457355
+          },
+          {
+            "camera": "P2",
+            "area": "Pagamento (Caixa)",
+            "avg_size": 84.0908203125,
+            "expected": 56.2763671875,
+            "deviation_pct": 49.42474881565933
+          }
+        ]
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "priority": "CRITICAL",
+      "store": "Marginal_Tiete_Pte_Anhanguera",
+      "camera": "P1",
+      "area": "Menu (Pedidos)",
+      "problem": "Câmera possivelmente OBSTRUÍDA, VIRADA PARA BAIXO ou DESALINHADA",
+      "action": "Inspecionar fisicamente câmera P1 (Menu (Pedidos)). Arquivo 73.5% menor que esperado.",
+      "avg_size_kb": 14.90234375,
+      "expected_kb": 56.2763671875,
+      "deviation_pct": 73.5193572457355
+    },
+    {
+      "priority": "HIGH",
+      "store": "Marginal_Tiete_Pte_Anhanguera",
+      "camera": "P2",
+      "area": "Pagamento (Caixa)",
+      "problem": "Câmera com tamanho de arquivo anormalmente GRANDE",
+      "action": "Verificar configuração de resolução/compressão da câmera P2 (Pagamento (Caixa)).",
+      "avg_size_kb": 84.0908203125,
+      "expected_kb": 56.2763671875,
+      "deviation_pct": 49.42474881565933
+    }
+  ]
+}

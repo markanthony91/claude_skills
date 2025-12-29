@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Câmeras AIVisual</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="title">🎥 Dashboard de Câmeras AIVisual</h1>
+            <div class="header-actions">
+                <button id="btnAiPanel" class="btn btn-ai">
+                    <span class="icon">🤖</span> Análise IA
+                </button>
+                <button id="btnDownload" class="btn btn-primary">
+                    <span class="icon">⬇️</span> Baixar Agora
+                </button>
+                <button id="btnRefresh" class="btn btn-secondary">
+                    <span class="icon">🔄</span> Atualizar
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📷</div>
+                    <div class="stat-info">
+                        <div class="stat-value" id="statTotalCameras">-</div>
+                        <div class="stat-label">Total de Câmeras</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🏪</div>
+                    <div class="stat-info">
+                        <div class="stat-value" id="statTotalStores">-</div>
+                        <div class="stat-label">Lojas</div>
+                    </div>
+                </div>
+                <div class="stat-card stat-bad">
+                    <div class="stat-icon">⚠️</div>
+                    <div class="stat-info">
+                        <div class="stat-value" id="statMarkedBad">-</div>
+                        <div class="stat-label">Câmeras Ruins</div>
+                    </div>
+                </div>
+                <div class="stat-card stat-good">
+                    <div class="stat-icon">✅</div>
+                    <div class="stat-info">
+                        <div class="stat-value" id="statMarkedOk">-</div>
+                        <div class="stat-label">Câmeras OK</div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🕒</div>
+                    <div class="stat-info">
+                        <div class="stat-value" id="statLastUpdate">-</div>
+                        <div class="stat-label">Última Atualização</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Analysis Panel -->
+    <div class="ai-panel" id="aiPanel" style="display: none;">
+        <div class="container">
+            <div class="ai-panel-header">
+                <div class="ai-panel-title">
+                    <span class="icon">🤖</span>
+                    <h3>Análise de Similaridade com IA</h3>
+                </div>
+                <button id="btnCloseAiPanel" class="btn-icon">✕</button>
+            </div>
+            <div class="ai-panel-content">
+                <div class="ai-status">
+                    <div class="ai-status-item">
+                        <span class="ai-status-label">Status:</span>
+                        <span class="ai-status-value" id="aiStatus">Verificando...</span>
+                    </div>
+                    <div class="ai-status-item">
+                        <span class="ai-status-label">Referências:</span>
+                        <span class="ai-status-value" id="aiReferencesCount">0</span>
+                    </div>
+                </div>
+                <div class="ai-mode-selector">
+                    <label class="ai-mode-label">Modo de Análise:</label>
+                    <div class="ai-mode-options">
+                        <label class="ai-mode-option">
+                            <input type="radio" name="analysisMode" value="complete" checked>
+                            <span class="ai-mode-text">
+                                <strong>Completo</strong>
+                                <small>Detecta qualquer mudança (pessoas, objetos, iluminação)</small>
+                            </span>
+                        </label>
+                        <label class="ai-mode-option">
+                            <input type="radio" name="analysisMode" value="structural">
+                            <span class="ai-mode-text">
+                                <strong>Estrutural</strong>
+                                <small>Detecta apenas mudança de posição/ângulo da câmera</small>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="ai-actions">
+                    <button id="btnAutoLearn" class="btn btn-primary">
+                        <span class="icon">🎓</span> Aprender Referências (Usar Últimas)
+                    </button>
+                    <button id="btnManualReference" class="btn btn-primary">
+                        <span class="icon">🎯</span> Selecionar Referências Manualmente
+                    </button>
+                    <button id="btnAnalyzeAll" class="btn btn-secondary">
+                        <span class="icon">🔍</span> Analisar Todas as Câmeras
+                    </button>
+                    <button id="btnViewReferences" class="btn btn-ghost">
+                        <span class="icon">📚</span> Ver Referências
+                    </button>
+                    <button id="btnClearReferences" class="btn btn-ghost" style="color: #dc2626;">
+                        <span class="icon">🗑️</span> Limpar Todas as Referências
+                    </button>
+                </div>
+                <div class="ai-info">
+                    <p><strong>Como funciona:</strong></p>
+                    <ol>
+                        <li>Clique em "Aprender Referências" para salvar as imagens atuais como padrão ideal</li>
+                        <li>Clique em "Analisar Todas" para comparar imagens com as referências</li>
+                        <li>Veja o score de similaridade (0-100%) em cada câmera</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters-section">
+        <div class="container">
+            <div class="filters-grid">
+                <div class="filter-group">
+                    <label for="filterVersion">Versão:</label>
+                    <select id="filterVersion" class="filter-select">
+                        <option value="latest">Apenas Últimas 📸</option>
+                        <option value="all">Todas as Versões 📚</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="filterStore">Loja:</label>
+                    <select id="filterStore" class="filter-select">
+                        <option value="all">Todas as Lojas</option>
+                        <!-- Opções carregadas dinamicamente -->
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="filterQuality">Qualidade IA:</label>
+                    <select id="filterQuality" class="filter-select">
+                        <option value="all">Todas</option>
+                        <option value="excellent">Excelentes (≥90%) 🌟</option>
+                        <option value="good">Boas (≥85%) ✅</option>
+                        <option value="attention">Atenção (70-84%) ⚠️</option>
+                        <option value="problems">Problemas (&lt;70%) 🔴</option>
+                        <option value="critical">Críticas (&lt;50%) ❌</option>
+                        <option value="not_analyzed">Não Analisadas</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="filterStatus">Status Manual:</label>
+                    <select id="filterStatus" class="filter-select">
+                        <option value="all">Todas</option>
+                        <option value="ok">Apenas OK ✅</option>
+                        <option value="bad">Marcadas Ruins ⚠️</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="filterPosition">Posição:</label>
+                    <select id="filterPosition" class="filter-select">
+                        <option value="all">Todas (P1, P2, P3)</option>
+                        <option value="P1">P1</option>
+                        <option value="P2">P2</option>
+                        <option value="P3">P3</option>
+                    </select>
+                </div>
+
+                <div class="filter-group search-group">
+                    <label for="searchInput">Busca Rápida:</label>
+                    <input type="text" id="searchInput" class="search-input" placeholder="Digite o nome da loja...">
+                </div>
+
+                <div class="filter-actions">
+                    <button id="btnExport" class="btn btn-secondary">
+                        <span class="icon">📥</span> Exportar Ruins
+                    </button>
+                    <button id="btnClearFilters" class="btn btn-ghost">
+                        Limpar Filtros
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Loading -->
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <p>Carregando câmeras...</p>
+            </div>
+
+            <!-- Empty State -->
+            <div id="emptyState" class="empty-state" style="display: none;">
+                <div class="empty-icon">📭</div>
+                <h2>Nenhuma câmera encontrada</h2>
+                <p>Execute o download para capturar imagens das câmeras</p>
+                <button id="btnDownloadEmpty" class="btn btn-primary">
+                    <span class="icon">⬇️</span> Baixar Agora
+                </button>
+            </div>
+
+            <!-- Cameras Grid -->
+            <div id="camerasGrid" class="cameras-grid" style="display: none;"></div>
+
+            <!-- Results Counter -->
+            <div id="resultsCounter" class="results-counter" style="display: none;">
+                Mostrando <strong id="resultsCount">0</strong> câmeras
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal de Nota -->
+    <div id="noteModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Adicionar Nota</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Câmera: <strong id="modalCameraName"></strong></p>
+                <textarea id="noteTextarea" class="note-textarea" placeholder="Descreva o problema encontrado..."></textarea>
+            </div>
+            <div class="modal-footer">
+                <button id="btnCancelNote" class="btn btn-secondary">Cancelar</button>
+                <button id="btnSaveNote" class="btn btn-primary">Marcar como Ruim</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Download -->
+    <div id="downloadModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>📥 Download Paralelo de Câmeras</h2>
+            </div>
+            <div class="modal-body">
+                <div class="download-progress">
+                    <div class="download-info">
+                        <p id="downloadStatus" class="download-status-text">Iniciando download...</p>
+                        <p id="downloadCurrentCamera" class="download-camera-text"></p>
+                    </div>
+
+                    <!-- Barra de progresso -->
+                    <div class="progress-bar-container">
+                        <div id="downloadProgressBar" class="progress-bar" style="width: 0%"></div>
+                    </div>
+                    <div class="progress-stats">
+                        <span id="downloadProgressPercent">0%</span>
+                        <span id="downloadProgressCount">0 / 0</span>
+                    </div>
+
+                    <!-- Estatísticas -->
+                    <div class="download-stats">
+                        <div class="download-stat">
+                            <span class="stat-label">Sucesso:</span>
+                            <span id="downloadSuccess" class="stat-value success">0</span>
+                        </div>
+                        <div class="download-stat">
+                            <span class="stat-label">Falha:</span>
+                            <span id="downloadFailed" class="stat-value error">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="btnCloseDownload" class="btn btn-secondary" style="display: none;">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Preview Modal -->
+    <div id="imageModal" class="modal image-modal">
+        <div class="image-modal-content">
+            <button class="modal-close image-modal-close">&times;</button>
+            <img id="imagePreview" src="" alt="Preview">
+            <div class="image-info">
+                <p id="imageInfoText"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- View References Modal -->
+    <div id="viewReferencesModal" class="modal">
+        <div class="modal-content reference-modal-content">
+            <div class="modal-header">
+                <h2>📚 Referências Salvas</h2>
+                <button class="modal-close" id="btnCloseViewReferences">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="reference-stats">
+                    <p>Total de referências: <strong id="viewRefTotal">0</strong></p>
+                </div>
+
+                <!-- Filtros de visualização -->
+                <div class="reference-filters">
+                    <select id="viewRefFilterStore" class="filter-select">
+                        <option value="all">Todas as Lojas</option>
+                    </select>
+                    <select id="viewRefFilterPosition" class="filter-select">
+                        <option value="all">Todas as Posições</option>
+                        <option value="P1">P1</option>
+                        <option value="P2">P2</option>
+                        <option value="P3">P3</option>
+                    </select>
+                </div>
+
+                <!-- Grid de referências -->
+                <div id="viewReferencesGrid" class="reference-grid" style="max-height: 500px; overflow-y: auto;">
+                    <!-- Preenchido via JavaScript -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="btnCloseViewReferencesFooter" class="btn btn-secondary">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comparison Modal -->
+    <div id="comparisonModal" class="modal">
+        <div class="modal-content comparison-modal-content">
+            <div class="modal-header">
+                <h2>Comparação: Referência vs Atual</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="comparison-info">
+                    <p><strong id="comparisonCameraName"></strong></p>
+                    <div class="comparison-score">
+                        Score de Similaridade: <span id="comparisonScore" class="score-badge">-</span>
+                    </div>
+                </div>
+                <div class="comparison-grid">
+                    <div class="comparison-image-container">
+                        <h3>Referência (Ideal)</h3>
+                        <img id="referenceImage" src="" alt="Referência">
+                    </div>
+                    <div class="comparison-image-container">
+                        <h3>Atual</h3>
+                        <img id="currentImage" src="" alt="Atual">
+                    </div>
+                </div>
+                <div class="comparison-details" id="comparisonDetails">
+                    <!-- Detalhes da análise serão inseridos aqui -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="btnSetAsReference" class="btn btn-primary">
+                    <span class="icon">⭐</span> Usar Atual como Referência
+                </button>
+                <button id="btnCloseComparison" class="btn btn-secondary">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Seleção Manual de Referências -->
+    <div id="referenceModal" class="modal">
+        <div class="modal-content reference-modal-content">
+            <div class="modal-header">
+                <h2>🎯 Selecionar Referências Manualmente</h2>
+                <button class="modal-close" id="btnCloseReferenceModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="reference-instructions">
+                    <p><strong>Instruções:</strong> Selecione imagens de boa qualidade para usar como referência de posição ideal. Escolha imagens onde a câmera está na posição correta, sem obstruções.</p>
+                </div>
+
+                <!-- Dica de navegação por teclado -->
+                <div class="keyboard-hint">
+                    <span><strong>💡 Dicas:</strong></span>
+                    <span>Clique na imagem para <strong>zoom</strong></span>
+                    <span>Use <kbd>Espaço</kbd> para selecionar</span>
+                    <span>Botões <strong>Selecionar Loja</strong> para marcar em lote</span>
+                </div>
+
+                <!-- Filtros de loja e posição -->
+                <div class="reference-filters">
+                    <select id="refFilterStore" class="filter-select">
+                        <option value="all">Todas as Lojas</option>
+                    </select>
+                    <select id="refFilterPosition" class="filter-select">
+                        <option value="all">Todas as Posições</option>
+                        <option value="P1">P1</option>
+                        <option value="P2">P2</option>
+                        <option value="P3">P3</option>
+                    </select>
+                    <div class="reference-counter">
+                        <span id="refSelectedCount">0</span> referências selecionadas
+                    </div>
+                </div>
+
+                <!-- Modo de visualização -->
+                <div class="reference-view-mode" style="margin-bottom: 15px;">
+                    <label style="font-weight: 600; font-size: 13px;">Visualização:</label>
+                    <button id="btnViewGrid" class="view-mode-btn active">📋 Grid</button>
+                    <button id="btnViewByStore" class="view-mode-btn">🏪 Por Loja</button>
+                </div>
+
+                <!-- Grid de imagens para seleção -->
+                <div id="referenceGrid" class="reference-grid large-thumbs">
+                    <!-- Preenchido via JavaScript -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="btnSaveReferences" class="btn btn-primary">
+                    <span class="icon">💾</span> Salvar Referências
+                </button>
+                <button id="btnCancelReferences" class="btn btn-secondary">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Zoom de Imagem -->
+    <div id="imageZoomModal" class="image-zoom-modal">
+        <img id="zoomedImage" src="" alt="Zoom">
+    </div>
+
+    <!-- Modal de Revisão de Referências Suspeitas -->
+    <div id="reviewReferencesModal" class="modal">
+        <div class="modal-content review-modal" style="max-width: 1400px;">
+            <div class="modal-header">
+                <h2>🔍 Revisar Referências Suspeitas (Score < 70%)</h2>
+                <button class="modal-close" id="btnCloseReviewModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="review-info" style="margin-bottom: 20px;">
+                    <p><strong>Instruções:</strong> Revise as câmeras com score baixo. Para cada uma, decida se quer manter a referência atual, usar a nova imagem como referência, ou remover a referência.</p>
+                    <p style="margin-top: 10px;"><strong>Total de câmeras suspeitas:</strong> <span id="reviewTotalCount" style="color: #dc2626; font-weight: 700;">0</span></p>
+                </div>
+
+                <div id="reviewGrid" style="max-height: 600px; overflow-y: auto;">
+                    <!-- Preenchido via JavaScript -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="btnCloseReview" class="btn btn-secondary">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

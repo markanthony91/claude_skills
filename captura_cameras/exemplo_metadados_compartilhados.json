@@ -1,0 +1,26 @@
+{
+  "Salvador_Av_ACM_P1": {
+    "nome_completo": "BK - Salvador Av ACM_P1",
+    "lugar": "Drive_Thru",
+    "area": "Pedido",
+    "ultima_resposta": "2025-12-22 07:09:54",
+    "ip_local": "172.18.0.4",
+    "ip_internet": "187.29.40.134",
+    "mac_address": "02:42:ac:12:00:04",
+    "temperatura_cpu": "0,00",
+    "uuid": "1161727969480FABKHMVBAXZ",
+    "versao_sistema": "DTRHU-3.7.1"
+  },
+  "Salvador_Av_ACM_P2": {
+    "nome_completo": "BK - Salvador Av ACM_P2",
+    "lugar": "Drive_Thru",
+    "ip_internet": "187.29.40.134",
+    "versao_sistema": "DTRHU-3.7.1"
+  },
+  "Salvador_Av_ACM_P3": {
+    "nome_completo": "BK - Salvador Av ACM_P3",
+    "lugar": "Drive_Thru",
+    "ip_internet": "187.29.40.134",
+    "versao_sistema": "DTRHU-3.7.1"
+  }
+}

@@ -1,0 +1,5391 @@
+{
+  "Aguas_Claras_Castaneiras_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 53.89,
+    "histogram_score": -1,
+    "final_score": 53.89,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:28.826069"
+  },
+  "Aguas_Claras_Castaneiras_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 59.67,
+    "histogram_score": -1,
+    "final_score": 59.67,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:28.863795"
+  },
+  "Aguas_Claras_Castaneiras_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 54.78,
+    "histogram_score": -1,
+    "final_score": 54.78,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:28.900872"
+  },
+  "Aracaju_Av_Augusto_Franco_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.92,
+    "histogram_score": -1,
+    "final_score": 99.92,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:28.939147"
+  },
+  "Aracaju_Av_Augusto_Franco_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 63.68,
+    "histogram_score": -1,
+    "final_score": 63.68,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:28.976436"
+  },
+  "Aracaju_Av_Augusto_Franco_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 64.4,
+    "histogram_score": -1,
+    "final_score": 64.4,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.014607"
+  },
+  "Aracaju_Av_Santos_Dumont_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 70.33,
+    "histogram_score": -1,
+    "final_score": 70.33,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.051051"
+  },
+  "Aracaju_Av_Santos_Dumont_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 42.26,
+    "histogram_score": -1,
+    "final_score": 42.26,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.089362"
+  },
+  "Aracaju_Av_Santos_Dumont_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 63.39,
+    "histogram_score": -1,
+    "final_score": 63.39,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.126499"
+  },
+  "Aricanduva_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 64.16,
+    "histogram_score": -1,
+    "final_score": 64.16,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.164167"
+  },
+  "Aricanduva_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 76.35,
+    "histogram_score": -1,
+    "final_score": 76.35,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.200646"
+  },
+  "Aricanduva_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 44.11,
+    "histogram_score": -1,
+    "final_score": 44.11,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.238724"
+  },
+  "Aruja_Estrada_de_Santa_Isabel_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.92,
+    "histogram_score": -1,
+    "final_score": 99.92,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.276321"
+  },
+  "Aruja_Estrada_de_Santa_Isabel_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.314921"
+  },
+  "Aruja_Estrada_de_Santa_Isabel_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.352850"
+  },
+  "Av_Comendador_Martinelli_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 31.71,
+    "histogram_score": -1,
+    "final_score": 31.71,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.392764"
+  },
+  "Av_Comendador_Martinelli_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 42.89,
+    "histogram_score": -1,
+    "final_score": 42.89,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.432077"
+  },
+  "Av_Comendador_Martinelli_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 16.44,
+    "histogram_score": -1,
+    "final_score": 16.44,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.472485"
+  },
+  "Av_Conselheiro_Carrao_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.92,
+    "histogram_score": -1,
+    "final_score": 99.92,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.509455"
+  },
+  "Av_Conselheiro_Carrao_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.92,
+    "histogram_score": -1,
+    "final_score": 99.92,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.547446"
+  },
+  "Av_Conselheiro_Carrao_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.584453"
+  },
+  "Av_Cristiano_Machado_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 58.08,
+    "histogram_score": -1,
+    "final_score": 58.08,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.622442"
+  },
+  "Av_Cristiano_Machado_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 68.21,
+    "histogram_score": -1,
+    "final_score": 68.21,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.674550"
+  },
+  "Av_Cristiano_Machado_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 40.68,
+    "histogram_score": -1,
+    "final_score": 40.68,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.712403"
+  },
+  "Av_Dummont_Villares_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.750320"
+  },
+  "Av_Dummont_Villares_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 53.24,
+    "histogram_score": -1,
+    "final_score": 53.24,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.788159"
+  },
+  "Av_Dummont_Villares_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 36.61,
+    "histogram_score": -1,
+    "final_score": 36.61,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.824911"
+  },
+  "Av_Giovanni_Gronchi_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.862742"
+  },
+  "Av_Giovanni_Gronchi_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.899933"
+  },
+  "Av_Giovanni_Gronchi_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.94,
+    "histogram_score": -1,
+    "final_score": 99.94,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.937420"
+  },
+  "Av_Hilton_Souto_Maior_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:29.974406"
+  },
+  "Av_Hilton_Souto_Maior_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 54.3,
+    "histogram_score": -1,
+    "final_score": 54.3,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.011472"
+  },
+  "Av_Hilton_Souto_Maior_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 68.12,
+    "histogram_score": -1,
+    "final_score": 68.12,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.048694"
+  },
+  "Av_Maria_Servidei_Demarchi_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 54.74,
+    "histogram_score": -1,
+    "final_score": 54.74,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.086858"
+  },
+  "Av_Maria_Servidei_Demarchi_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 55.7,
+    "histogram_score": -1,
+    "final_score": 55.7,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.124245"
+  },
+  "Av_Maria_Servidei_Demarchi_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 48.12,
+    "histogram_score": -1,
+    "final_score": 48.12,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.162482"
+  },
+  "Av_Nordestina_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.92,
+    "histogram_score": -1,
+    "final_score": 99.92,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.200344"
+  },
+  "Av_Nordestina_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 33.73,
+    "histogram_score": -1,
+    "final_score": 33.73,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.238322"
+  },
+  "Av_Nordestina_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 48.01,
+    "histogram_score": -1,
+    "final_score": 48.01,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.275690"
+  },
+  "Av_Parada_Pinto_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 43.58,
+    "histogram_score": -1,
+    "final_score": 43.58,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.313992"
+  },
+  "Av_Parada_Pinto_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 31.92,
+    "histogram_score": -1,
+    "final_score": 31.92,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.352116"
+  },
+  "Av_Parada_Pinto_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 19.86,
+    "histogram_score": -1,
+    "final_score": 19.86,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.390215"
+  },
+  "BH_Andre_Cavalcanti_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.92,
+    "histogram_score": -1,
+    "final_score": 99.92,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.427233"
+  },
+  "BH_Andre_Cavalcanti_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 56.76,
+    "histogram_score": -1,
+    "final_score": 56.76,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.464424"
+  },
+  "BH_Andre_Cavalcanti_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 42.69,
+    "histogram_score": -1,
+    "final_score": 42.69,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.504486"
+  },
+  "BH_Av_Antonio_Carlos_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 45.42,
+    "histogram_score": -1,
+    "final_score": 45.42,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.543742"
+  },
+  "BH_Av_Antonio_Carlos_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 51.66,
+    "histogram_score": -1,
+    "final_score": 51.66,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.582952"
+  },
+  "BH_Av_Antonio_Carlos_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.621189"
+  },
+  "BK-ITAQUERA1_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 54.37,
+    "histogram_score": -1,
+    "final_score": 54.37,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.657214"
+  },
+  "BK-ITAQUERA1_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 40.82,
+    "histogram_score": -1,
+    "final_score": 40.82,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.695343"
+  },
+  "BK-ITAQUERA1_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 39.39,
+    "histogram_score": -1,
+    "final_score": 39.39,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.731876"
+  },
+  "BK-JK_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 56.55,
+    "histogram_score": -1,
+    "final_score": 56.55,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.768401"
+  },
+  "BK-JK_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 44.54,
+    "histogram_score": -1,
+    "final_score": 44.54,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.806994"
+  },
+  "BK-JK_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 46.53,
+    "histogram_score": -1,
+    "final_score": 46.53,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.845276"
+  },
+  "BK-_Vicente_Rao_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 66.92,
+    "histogram_score": -1,
+    "final_score": 66.92,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.882417"
+  },
+  "BK-_Vicente_Rao_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 60.1,
+    "histogram_score": -1,
+    "final_score": 60.1,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.920195"
+  },
+  "BK-_Vicente_Rao_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 50.24,
+    "histogram_score": -1,
+    "final_score": 50.24,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.958602"
+  },
+  "Bandeirantes_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 44.98,
+    "histogram_score": -1,
+    "final_score": 44.98,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:30.995672"
+  },
+  "Bandeirantes_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 66.98,
+    "histogram_score": -1,
+    "final_score": 66.98,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.031664"
+  },
+  "Bandeirantes_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 49.47,
+    "histogram_score": -1,
+    "final_score": 49.47,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.069908"
+  },
+  "Barueri_Henriqueta_Mendes_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.108444"
+  },
+  "Barueri_Henriqueta_Mendes_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 28.12,
+    "histogram_score": -1,
+    "final_score": 28.12,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.146301"
+  },
+  "Barueri_Henriqueta_Mendes_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.185668"
+  },
+  "Bauru_Av_Castelo_Branco_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 32.17,
+    "histogram_score": -1,
+    "final_score": 32.17,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.223048"
+  },
+  "Bauru_Av_Castelo_Branco_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 61.12,
+    "histogram_score": -1,
+    "final_score": 61.12,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.261342"
+  },
+  "Bauru_Av_Castelo_Branco_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 62.27,
+    "histogram_score": -1,
+    "final_score": 62.27,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.299284"
+  },
+  "Bauru_Av_Nacoes_Unidas_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 59.91,
+    "histogram_score": -1,
+    "final_score": 59.91,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.339673"
+  },
+  "Bauru_Av_Nacoes_Unidas_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 50.3,
+    "histogram_score": -1,
+    "final_score": 50.3,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.378016"
+  },
+  "Bauru_Av_Nacoes_Unidas_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 50.83,
+    "histogram_score": -1,
+    "final_score": 50.83,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.416068"
+  },
+  "Belem_Av_Nazare_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 64.16,
+    "histogram_score": -1,
+    "final_score": 64.16,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.452960"
+  },
+  "Belem_Av_Nazare_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 49.5,
+    "histogram_score": -1,
+    "final_score": 49.5,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.490898"
+  },
+  "Belem_Av_Nazare_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 62.44,
+    "histogram_score": -1,
+    "final_score": 62.44,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.527655"
+  },
+  "Bias_Fortes_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.565899"
+  },
+  "Bias_Fortes_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 52.57,
+    "histogram_score": -1,
+    "final_score": 52.57,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.605331"
+  },
+  "Bias_Fortes_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 57.08,
+    "histogram_score": -1,
+    "final_score": 57.08,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.644253"
+  },
+  "Bk_R_Maria_Amalia_Lopes_Azevedo_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 46.76,
+    "histogram_score": -1,
+    "final_score": 46.76,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.684814"
+  },
+  "Bk_R_Maria_Amalia_Lopes_Azevedo_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.92,
+    "histogram_score": -1,
+    "final_score": 99.92,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.723531"
+  },
+  "Bk_R_Maria_Amalia_Lopes_Azevedo_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 28.03,
+    "histogram_score": -1,
+    "final_score": 28.03,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.762032"
+  },
+  "Bk_Salim_f_Maluf_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 47.48,
+    "histogram_score": -1,
+    "final_score": 47.48,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.800920"
+  },
+  "Bk_Salim_f_Maluf_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 45.34,
+    "histogram_score": -1,
+    "final_score": 45.34,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.838622"
+  },
+  "Bk_Salim_f_Maluf_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 33.26,
+    "histogram_score": -1,
+    "final_score": 33.26,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.876751"
+  },
+  "Brasilia_EPNB_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 70.42,
+    "histogram_score": -1,
+    "final_score": 70.42,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.914381"
+  },
+  "Brasilia_EPNB_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 60.67,
+    "histogram_score": -1,
+    "final_score": 60.67,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.951825"
+  },
+  "Brasilia_EPNB_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 47.14,
+    "histogram_score": -1,
+    "final_score": 47.14,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:31.989855"
+  },
+  "Caetano_Alvares_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 64.76,
+    "histogram_score": -1,
+    "final_score": 64.76,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.027020"
+  },
+  "Caetano_Alvares_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 57.21,
+    "histogram_score": -1,
+    "final_score": 57.21,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.064834"
+  },
+  "Caetano_Alvares_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 43.52,
+    "histogram_score": -1,
+    "final_score": 43.52,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.102951"
+  },
+  "Cam_Capitao_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 53.14,
+    "histogram_score": -1,
+    "final_score": 53.14,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.139876"
+  },
+  "Cam_Capitao_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 54.99,
+    "histogram_score": -1,
+    "final_score": 54.99,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.177993"
+  },
+  "Cam_Capitao_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 41.74,
+    "histogram_score": -1,
+    "final_score": 41.74,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.216102"
+  },
+  "Cam_Guaruja_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 50.13,
+    "histogram_score": -1,
+    "final_score": 50.13,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.253382"
+  },
+  "Cam_Guaruja_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.92,
+    "histogram_score": -1,
+    "final_score": 99.92,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.292531"
+  },
+  "Cam_Guaruja_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 46.84,
+    "histogram_score": -1,
+    "final_score": 46.84,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.331712"
+  },
+  "Cam_Jacu_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 56.12,
+    "histogram_score": -1,
+    "final_score": 56.12,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.369539"
+  },
+  "Cam_Jacu_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 43.89,
+    "histogram_score": -1,
+    "final_score": 43.89,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.407102"
+  },
+  "Cam_Jacu_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 51.21,
+    "histogram_score": -1,
+    "final_score": 51.21,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.445261"
+  },
+  "Cam_Marechal2_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 40.13,
+    "histogram_score": -1,
+    "final_score": 40.13,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.482465"
+  },
+  "Cam_Marechal2_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 35.61,
+    "histogram_score": -1,
+    "final_score": 35.61,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.521109"
+  },
+  "Cam_Marechal2_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 28.07,
+    "histogram_score": -1,
+    "final_score": 28.07,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.558647"
+  },
+  "Cam_Ragueb_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 59.58,
+    "histogram_score": -1,
+    "final_score": 59.58,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.595760"
+  },
+  "Cam_Ragueb_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 49.75,
+    "histogram_score": -1,
+    "final_score": 49.75,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.633744"
+  },
+  "Cam_Ragueb_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 21.79,
+    "histogram_score": -1,
+    "final_score": 21.79,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.672489"
+  },
+  "Cam_Tito_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.711578"
+  },
+  "Cam_Tito_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.94,
+    "histogram_score": -1,
+    "final_score": 99.94,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.750988"
+  },
+  "Cam_Tito_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.790817"
+  },
+  "Cam_Vaz_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 58.35,
+    "histogram_score": -1,
+    "final_score": 58.35,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.830725"
+  },
+  "Cam_Vaz_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 42.54,
+    "histogram_score": -1,
+    "final_score": 42.54,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.870519"
+  },
+  "Cam_Vaz_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 16.58,
+    "histogram_score": -1,
+    "final_score": 16.58,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.909248"
+  },
+  "Camera_Helio_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 36.55,
+    "histogram_score": -1,
+    "final_score": 36.55,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.947433"
+  },
+  "Camera_Helio_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 63.75,
+    "histogram_score": -1,
+    "final_score": 63.75,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:32.985433"
+  },
+  "Camera_Helio_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 40.28,
+    "histogram_score": -1,
+    "final_score": 40.28,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.023961"
+  },
+  "Campinas_NS_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 59.59,
+    "histogram_score": -1,
+    "final_score": 59.59,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.061186"
+  },
+  "Campinas_NS_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 59.84,
+    "histogram_score": -1,
+    "final_score": 59.84,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.099661"
+  },
+  "Campinas_NS_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 59.2,
+    "histogram_score": -1,
+    "final_score": 59.2,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.137972"
+  },
+  "Canoas_Vieira_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 62.0,
+    "histogram_score": -1,
+    "final_score": 62.0,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.176092"
+  },
+  "Canoas_Vieira_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 60.9,
+    "histogram_score": -1,
+    "final_score": 60.9,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.213732"
+  },
+  "Canoas_Vieira_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 70.25,
+    "histogram_score": -1,
+    "final_score": 70.25,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.251328"
+  },
+  "Carapicuiba_Av_Serafico_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 55.25,
+    "histogram_score": -1,
+    "final_score": 55.25,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.289609"
+  },
+  "Carapicuiba_Av_Serafico_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 60.53,
+    "histogram_score": -1,
+    "final_score": 60.53,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.326992"
+  },
+  "Carapicuiba_Av_Serafico_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 52.81,
+    "histogram_score": -1,
+    "final_score": 52.81,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.365532"
+  },
+  "Carapicuiba_Em_Carlos_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 50.97,
+    "histogram_score": -1,
+    "final_score": 50.97,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.404369"
+  },
+  "Carapicuiba_Em_Carlos_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 60.44,
+    "histogram_score": -1,
+    "final_score": 60.44,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.442112"
+  },
+  "Carapicuiba_Em_Carlos_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 46.2,
+    "histogram_score": -1,
+    "final_score": 46.2,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.480039"
+  },
+  "Comendador_Santana_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 77.09,
+    "histogram_score": -1,
+    "final_score": 77.09,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.517182"
+  },
+  "Comendador_Santana_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 59.28,
+    "histogram_score": -1,
+    "final_score": 59.28,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.554815"
+  },
+  "Comendador_Santana_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 53.07,
+    "histogram_score": -1,
+    "final_score": 53.07,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.593554"
+  },
+  "Contagem_Av_Babita_Camargos_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 65.21,
+    "histogram_score": -1,
+    "final_score": 65.21,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.631858"
+  },
+  "Contagem_Av_Babita_Camargos_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 46.3,
+    "histogram_score": -1,
+    "final_score": 46.3,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.668883"
+  },
+  "Contagem_Av_Babita_Camargos_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 52.27,
+    "histogram_score": -1,
+    "final_score": 52.27,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.706991"
+  },
+  "Curitiba_Carlos_Klemtz_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 78.4,
+    "histogram_score": -1,
+    "final_score": 78.4,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.744020"
+  },
+  "Curitiba_Carlos_Klemtz_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 63.89,
+    "histogram_score": -1,
+    "final_score": 63.89,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.782235"
+  },
+  "Curitiba_Carlos_Klemtz_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 55.46,
+    "histogram_score": -1,
+    "final_score": 55.46,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.821221"
+  },
+  "Curitiba_Francisco_Frishmann_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 62.4,
+    "histogram_score": -1,
+    "final_score": 62.4,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.858796"
+  },
+  "Curitiba_Francisco_Frishmann_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.92,
+    "histogram_score": -1,
+    "final_score": 99.92,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.898222"
+  },
+  "Curitiba_Francisco_Frishmann_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 49.65,
+    "histogram_score": -1,
+    "final_score": 49.65,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.937508"
+  },
+  "Curitiba_Linha_Verde_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:33.978107"
+  },
+  "Curitiba_Linha_Verde_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 62.93,
+    "histogram_score": -1,
+    "final_score": 62.93,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.017024"
+  },
+  "Curitiba_Linha_Verde_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.92,
+    "histogram_score": -1,
+    "final_score": 99.92,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.058132"
+  },
+  "Est_das_Lagrimas_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 57.62,
+    "histogram_score": -1,
+    "final_score": 57.62,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.097771"
+  },
+  "Est_das_Lagrimas_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 65.15,
+    "histogram_score": -1,
+    "final_score": 65.15,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.136604"
+  },
+  "Est_das_Lagrimas_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 84.51,
+    "histogram_score": -1,
+    "final_score": 84.51,
+    "status": "BOM",
+    "issues": [],
+    "summary": "Câmera bem posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.174782"
+  },
+  "Extra_Jaguare_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 63.3,
+    "histogram_score": -1,
+    "final_score": 63.3,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.212426"
+  },
+  "Extra_Jaguare_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 32.41,
+    "histogram_score": -1,
+    "final_score": 32.41,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.251280"
+  },
+  "Extra_Jaguare_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 46.7,
+    "histogram_score": -1,
+    "final_score": 46.7,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.290233"
+  },
+  "FORT_TREZE_DE_MAIO_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.329972"
+  },
+  "FORT_TREZE_DE_MAIO_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 63.37,
+    "histogram_score": -1,
+    "final_score": 63.37,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.368777"
+  },
+  "FORT_TREZE_DE_MAIO_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 61.65,
+    "histogram_score": -1,
+    "final_score": 61.65,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.409140"
+  },
+  "FS_RJ_ESTRADA_CACHAMORRA_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 51.04,
+    "histogram_score": -1,
+    "final_score": 51.04,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.447278"
+  },
+  "FS_RJ_ESTRADA_CACHAMORRA_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 63.02,
+    "histogram_score": -1,
+    "final_score": 63.02,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.484578"
+  },
+  "FS_RJ_ESTRADA_CACHAMORRA_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 66.21,
+    "histogram_score": -1,
+    "final_score": 66.21,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.524420"
+  },
+  "FS_RJ_FELIPE_CARDOSO_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 63.31,
+    "histogram_score": -1,
+    "final_score": 63.31,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.563274"
+  },
+  "FS_RJ_FELIPE_CARDOSO_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 59.09,
+    "histogram_score": -1,
+    "final_score": 59.09,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.600806"
+  },
+  "FS_RJ_FELIPE_CARDOSO_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 35.7,
+    "histogram_score": -1,
+    "final_score": 35.7,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.640167"
+  },
+  "Felipe_Pinel_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 57.2,
+    "histogram_score": -1,
+    "final_score": 57.2,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.679527"
+  },
+  "Felipe_Pinel_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 46.16,
+    "histogram_score": -1,
+    "final_score": 46.16,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.718457"
+  },
+  "Felipe_Pinel_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 45.28,
+    "histogram_score": -1,
+    "final_score": 45.28,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.757827"
+  },
+  "Ferraz_Av_Brasil_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 60.28,
+    "histogram_score": -1,
+    "final_score": 60.28,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.796631"
+  },
+  "Ferraz_Av_Brasil_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.92,
+    "histogram_score": -1,
+    "final_score": 99.92,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.835387"
+  },
+  "Ferraz_Av_Brasil_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 56.13,
+    "histogram_score": -1,
+    "final_score": 56.13,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.874446"
+  },
+  "Fortaleza_Av_Gov_Parsifal_Barroso_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 19.69,
+    "histogram_score": -1,
+    "final_score": 19.69,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.914630"
+  },
+  "Fortaleza_Av_Gov_Parsifal_Barroso_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 53.37,
+    "histogram_score": -1,
+    "final_score": 53.37,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.954422"
+  },
+  "Fortaleza_Av_Gov_Parsifal_Barroso_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 65.26,
+    "histogram_score": -1,
+    "final_score": 65.26,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:34.992914"
+  },
+  "Fortaleza_Av_Washington_Soares_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 34.85,
+    "histogram_score": -1,
+    "final_score": 34.85,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.033103"
+  },
+  "Fortaleza_Av_Washington_Soares_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 29.31,
+    "histogram_score": -1,
+    "final_score": 29.31,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.073875"
+  },
+  "Fortaleza_Av_Washington_Soares_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 30.63,
+    "histogram_score": -1,
+    "final_score": 30.63,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.114805"
+  },
+  "GO_VALPARAISO_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 44.2,
+    "histogram_score": -1,
+    "final_score": 44.2,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.155216"
+  },
+  "GO_VALPARAISO_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 54.48,
+    "histogram_score": -1,
+    "final_score": 54.48,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.194785"
+  },
+  "GO_VALPARAISO_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 58.63,
+    "histogram_score": -1,
+    "final_score": 58.63,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.233105"
+  },
+  "Goiania_Av_136_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 51.0,
+    "histogram_score": -1,
+    "final_score": 51.0,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.272286"
+  },
+  "Goiania_Av_136_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 63.91,
+    "histogram_score": -1,
+    "final_score": 63.91,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.312273"
+  },
+  "Goiania_Av_136_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 53.87,
+    "histogram_score": -1,
+    "final_score": 53.87,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.351907"
+  },
+  "Goiania_Av_85_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 50.47,
+    "histogram_score": -1,
+    "final_score": 50.47,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.389923"
+  },
+  "Goiania_Av_85_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 54.14,
+    "histogram_score": -1,
+    "final_score": 54.14,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.429220"
+  },
+  "Goiania_Av_85_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 27.44,
+    "histogram_score": -1,
+    "final_score": 27.44,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.468013"
+  },
+  "Goiania_Av_T-63_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 49.29,
+    "histogram_score": -1,
+    "final_score": 49.29,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.507206"
+  },
+  "Goiania_Av_T-63_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.547073"
+  },
+  "Goiania_Av_T-63_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 59.14,
+    "histogram_score": -1,
+    "final_score": 59.14,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.586349"
+  },
+  "Goiania_Perimetral_Norte_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 56.48,
+    "histogram_score": -1,
+    "final_score": 56.48,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.624375"
+  },
+  "Goiania_Perimetral_Norte_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 49.81,
+    "histogram_score": -1,
+    "final_score": 49.81,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.664453"
+  },
+  "Goiania_Perimetral_Norte_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 45.96,
+    "histogram_score": -1,
+    "final_score": 45.96,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.704714"
+  },
+  "Gru_Estr_Juscelino_Kubitscheck_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 17.78,
+    "histogram_score": -1,
+    "final_score": 17.78,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.745124"
+  },
+  "Gru_Estr_Juscelino_Kubitscheck_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 17.74,
+    "histogram_score": -1,
+    "final_score": 17.74,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.784665"
+  },
+  "Gru_Estr_Juscelino_Kubitscheck_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 5.06,
+    "histogram_score": -1,
+    "final_score": 5.06,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.825301"
+  },
+  "Guaruja_Av_Ademar_Barros_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 55.72,
+    "histogram_score": -1,
+    "final_score": 55.72,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.864296"
+  },
+  "Guaruja_Av_Ademar_Barros_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 71.38,
+    "histogram_score": -1,
+    "final_score": 71.38,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.905147"
+  },
+  "Guaruja_Av_Ademar_Barros_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 39.13,
+    "histogram_score": -1,
+    "final_score": 39.13,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.938487"
+  },
+  "Guarulhos_Presidente_Dutra_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 57.3,
+    "histogram_score": -1,
+    "final_score": 57.3,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:35.975870"
+  },
+  "Guarulhos_Presidente_Dutra_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 59.79,
+    "histogram_score": -1,
+    "final_score": 59.79,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.014864"
+  },
+  "Guarulhos_Presidente_Dutra_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 53.92,
+    "histogram_score": -1,
+    "final_score": 53.92,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.054104"
+  },
+  "Itajuba_C_Alvim_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 71.06,
+    "histogram_score": -1,
+    "final_score": 71.06,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.096346"
+  },
+  "Itajuba_C_Alvim_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 59.83,
+    "histogram_score": -1,
+    "final_score": 59.83,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.136290"
+  },
+  "Itajuba_C_Alvim_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 51.55,
+    "histogram_score": -1,
+    "final_score": 51.55,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.176098"
+  },
+  "Itapetininga_R_Prudente_de_Moraes_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 55.84,
+    "histogram_score": -1,
+    "final_score": 55.84,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.216387"
+  },
+  "Itapetininga_R_Prudente_de_Moraes_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 54.53,
+    "histogram_score": -1,
+    "final_score": 54.53,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.257063"
+  },
+  "Itapetininga_R_Prudente_de_Moraes_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 51.9,
+    "histogram_score": -1,
+    "final_score": 51.9,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.297325"
+  },
+  "Itaquaquecetuba_Av_Joao_Barbosa_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.92,
+    "histogram_score": -1,
+    "final_score": 99.92,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.337415"
+  },
+  "Itaquaquecetuba_Av_Joao_Barbosa_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.9,
+    "histogram_score": -1,
+    "final_score": 99.9,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.378017"
+  },
+  "Itaquaquecetuba_Av_Joao_Barbosa_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.423252"
+  },
+  "Jacu_Pessego_2_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.92,
+    "histogram_score": -1,
+    "final_score": 99.92,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.465822"
+  },
+  "Jacu_Pessego_2_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 52.3,
+    "histogram_score": -1,
+    "final_score": 52.3,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.505323"
+  },
+  "Jacu_Pessego_2_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 46.03,
+    "histogram_score": -1,
+    "final_score": 46.03,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.545207"
+  },
+  "Jundiai_Av_Nove_de_Julho_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 44.93,
+    "histogram_score": -1,
+    "final_score": 44.93,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.584976"
+  },
+  "Jundiai_Av_Nove_de_Julho_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 60.24,
+    "histogram_score": -1,
+    "final_score": 60.24,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.625109"
+  },
+  "Jundiai_Av_Nove_de_Julho_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 46.85,
+    "histogram_score": -1,
+    "final_score": 46.85,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.665620"
+  },
+  "Jundiai_Av_Pref_Luiz_Latorre_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 48.12,
+    "histogram_score": -1,
+    "final_score": 48.12,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.704134"
+  },
+  "Jundiai_Av_Pref_Luiz_Latorre_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 61.79,
+    "histogram_score": -1,
+    "final_score": 61.79,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.743264"
+  },
+  "Jundiai_Av_Pref_Luiz_Latorre_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 49.73,
+    "histogram_score": -1,
+    "final_score": 49.73,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.784213"
+  },
+  "Jundiai_Rodovia_dos_Bandeirantes_Lago_Azul_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 35.75,
+    "histogram_score": -1,
+    "final_score": 35.75,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.824188"
+  },
+  "Jundiai_Rodovia_dos_Bandeirantes_Lago_Azul_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 27.46,
+    "histogram_score": -1,
+    "final_score": 27.46,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.863866"
+  },
+  "Jundiai_Rodovia_dos_Bandeirantes_Lago_Azul_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 22.22,
+    "histogram_score": -1,
+    "final_score": 22.22,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.904685"
+  },
+  "LONDRINA_SAUL_ELKIND_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 28.44,
+    "histogram_score": -1,
+    "final_score": 28.44,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.946113"
+  },
+  "LONDRINA_SAUL_ELKIND_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 37.79,
+    "histogram_score": -1,
+    "final_score": 37.79,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:36.985918"
+  },
+  "LONDRINA_SAUL_ELKIND_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 58.41,
+    "histogram_score": -1,
+    "final_score": 58.41,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.025884"
+  },
+  "Lauro_de_Freitas_Av_Santos_Dumont_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 59.31,
+    "histogram_score": -1,
+    "final_score": 59.31,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.065341"
+  },
+  "Lauro_de_Freitas_Av_Santos_Dumont_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.91,
+    "histogram_score": -1,
+    "final_score": 99.91,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.106131"
+  },
+  "Lauro_de_Freitas_Av_Santos_Dumont_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 63.42,
+    "histogram_score": -1,
+    "final_score": 63.42,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.144563"
+  },
+  "Londrina_Av_Higienopolis_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 40.31,
+    "histogram_score": -1,
+    "final_score": 40.31,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.185224"
+  },
+  "Londrina_Av_Higienopolis_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 41.5,
+    "histogram_score": -1,
+    "final_score": 41.5,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.224962"
+  },
+  "Londrina_Av_Higienopolis_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 30.79,
+    "histogram_score": -1,
+    "final_score": 30.79,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.265059"
+  },
+  "Luiz_Gushiken_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 57.65,
+    "histogram_score": -1,
+    "final_score": 57.65,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.304527"
+  },
+  "Luiz_Gushiken_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 61.69,
+    "histogram_score": -1,
+    "final_score": 61.69,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.345216"
+  },
+  "Luiz_Gushiken_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 46.81,
+    "histogram_score": -1,
+    "final_score": 46.81,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.387203"
+  },
+  "M_Tiete_Pte_Aricanduva_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.92,
+    "histogram_score": -1,
+    "final_score": 99.92,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.428420"
+  },
+  "M_Tiete_Pte_Aricanduva_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 24.44,
+    "histogram_score": -1,
+    "final_score": 24.44,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.468430"
+  },
+  "M_Tiete_Pte_Aricanduva_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 9.91,
+    "histogram_score": -1,
+    "final_score": 9.91,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.510755"
+  },
+  "Maceio_Av_Menino_Marcelo_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 51.06,
+    "histogram_score": -1,
+    "final_score": 51.06,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.550288"
+  },
+  "Maceio_Av_Menino_Marcelo_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 52.37,
+    "histogram_score": -1,
+    "final_score": 52.37,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.591020"
+  },
+  "Maceio_Av_Menino_Marcelo_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 57.96,
+    "histogram_score": -1,
+    "final_score": 57.96,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.630161"
+  },
+  "Maceio_Fernandes_Lima_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 49.16,
+    "histogram_score": -1,
+    "final_score": 49.16,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.669907"
+  },
+  "Maceio_Fernandes_Lima_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 54.46,
+    "histogram_score": -1,
+    "final_score": 54.46,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.709537"
+  },
+  "Maceio_Fernandes_Lima_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 59.36,
+    "histogram_score": -1,
+    "final_score": 59.36,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.749061"
+  },
+  "Marginal_Tiete_Pari_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 53.96,
+    "histogram_score": -1,
+    "final_score": 53.96,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.788575"
+  },
+  "Marginal_Tiete_Pari_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 25.15,
+    "histogram_score": -1,
+    "final_score": 25.15,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.830067"
+  },
+  "Marginal_Tiete_Pari_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.869964"
+  },
+  "Marginal_Tiete_Pte_Anhanguera_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.98,
+    "histogram_score": -1,
+    "final_score": 99.98,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.908106"
+  },
+  "Marginal_Tiete_Pte_Anhanguera_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.950196"
+  },
+  "Marginal_Tiete_Pte_Anhanguera_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:37.990942"
+  },
+  "Marginal_Tiete_Pte_das_Bandeiras_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 51.59,
+    "histogram_score": -1,
+    "final_score": 51.59,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.030923"
+  },
+  "Marginal_Tiete_Pte_das_Bandeiras_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.071482"
+  },
+  "Marginal_Tiete_Pte_das_Bandeiras_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 78.21,
+    "histogram_score": -1,
+    "final_score": 78.21,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.111099"
+  },
+  "Maringa_Praca_Manoel_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 48.31,
+    "histogram_score": -1,
+    "final_score": 48.31,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.151154"
+  },
+  "Maringa_Praca_Manoel_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 50.34,
+    "histogram_score": -1,
+    "final_score": 50.34,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.190912"
+  },
+  "Maringa_Praca_Manoel_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 28.09,
+    "histogram_score": -1,
+    "final_score": 28.09,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.230086"
+  },
+  "Moreira_Guimaraes_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 58.36,
+    "histogram_score": -1,
+    "final_score": 58.36,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.267973"
+  },
+  "Moreira_Guimaraes_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 66.67,
+    "histogram_score": -1,
+    "final_score": 66.67,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.307451"
+  },
+  "Moreira_Guimaraes_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 59.17,
+    "histogram_score": -1,
+    "final_score": 59.17,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.347224"
+  },
+  "NOVA_IGUACU_DUTRA_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 50.58,
+    "histogram_score": -1,
+    "final_score": 50.58,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.386972"
+  },
+  "NOVA_IGUACU_DUTRA_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.97,
+    "histogram_score": -1,
+    "final_score": 99.97,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.427344"
+  },
+  "NOVA_IGUACU_DUTRA_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 62.16,
+    "histogram_score": -1,
+    "final_score": 62.16,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.467360"
+  },
+  "NT_BACHAREL_TOMAZ_LANDIM_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 72.48,
+    "histogram_score": -1,
+    "final_score": 72.48,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.507531"
+  },
+  "NT_BACHAREL_TOMAZ_LANDIM_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 66.87,
+    "histogram_score": -1,
+    "final_score": 66.87,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.548460"
+  },
+  "NT_BACHAREL_TOMAZ_LANDIM_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 77.57,
+    "histogram_score": -1,
+    "final_score": 77.57,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.588047"
+  },
+  "Osasco_Autonomistas_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 67.41,
+    "histogram_score": -1,
+    "final_score": 67.41,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.627737"
+  },
+  "Osasco_Autonomistas_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 48.46,
+    "histogram_score": -1,
+    "final_score": 48.46,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.669679"
+  },
+  "Osasco_Autonomistas_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 43.14,
+    "histogram_score": -1,
+    "final_score": 43.14,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.711584"
+  },
+  "Osasco_Av_Pref_Hirant_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 58.69,
+    "histogram_score": -1,
+    "final_score": 58.69,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.750688"
+  },
+  "Osasco_Av_Pref_Hirant_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 60.56,
+    "histogram_score": -1,
+    "final_score": 60.56,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.790316"
+  },
+  "Osasco_Av_Pref_Hirant_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 47.06,
+    "histogram_score": -1,
+    "final_score": 47.06,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.831162"
+  },
+  "Parapua_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 66.53,
+    "histogram_score": -1,
+    "final_score": 66.53,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.871838"
+  },
+  "Parapua_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 48.89,
+    "histogram_score": -1,
+    "final_score": 48.89,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.911362"
+  },
+  "Parapua_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 48.33,
+    "histogram_score": -1,
+    "final_score": 48.33,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.951695"
+  },
+  "Paulo_Faccini_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:38.991563"
+  },
+  "Paulo_Faccini_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.92,
+    "histogram_score": -1,
+    "final_score": 99.92,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.030980"
+  },
+  "Paulo_Faccini_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 43.37,
+    "histogram_score": -1,
+    "final_score": 43.37,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.072369"
+  },
+  "Pinhais_R_Dep_Joao_Leopoldo_Jacomel_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.112604"
+  },
+  "Pinhais_R_Dep_Joao_Leopoldo_Jacomel_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 69.0,
+    "histogram_score": -1,
+    "final_score": 69.0,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.153264"
+  },
+  "Pinhais_R_Dep_Joao_Leopoldo_Jacomel_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 49.9,
+    "histogram_score": -1,
+    "final_score": 49.9,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.192512"
+  },
+  "Praia_Grande_Mal_Mallet_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 44.5,
+    "histogram_score": -1,
+    "final_score": 44.5,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.233954"
+  },
+  "Praia_Grande_Mal_Mallet_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 57.87,
+    "histogram_score": -1,
+    "final_score": 57.87,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.273444"
+  },
+  "Praia_Grande_Mal_Mallet_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 51.88,
+    "histogram_score": -1,
+    "final_score": 51.88,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.313077"
+  },
+  "Praia_Grande_Pres_Kennedy_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 59.27,
+    "histogram_score": -1,
+    "final_score": 59.27,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.355370"
+  },
+  "Praia_Grande_Pres_Kennedy_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 53.71,
+    "histogram_score": -1,
+    "final_score": 53.71,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.395991"
+  },
+  "Praia_Grande_Pres_Kennedy_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 61.1,
+    "histogram_score": -1,
+    "final_score": 61.1,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.435841"
+  },
+  "Prestes_Maia_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 48.85,
+    "histogram_score": -1,
+    "final_score": 48.85,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.475069"
+  },
+  "Prestes_Maia_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 51.34,
+    "histogram_score": -1,
+    "final_score": 51.34,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.515284"
+  },
+  "Prestes_Maia_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 42.18,
+    "histogram_score": -1,
+    "final_score": 42.18,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.557369"
+  },
+  "Prestes_Maia_Sto_Andre_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 54.98,
+    "histogram_score": -1,
+    "final_score": 54.98,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.597635"
+  },
+  "Prestes_Maia_Sto_Andre_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 73.51,
+    "histogram_score": -1,
+    "final_score": 73.51,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.637749"
+  },
+  "Prestes_Maia_Sto_Andre_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 52.07,
+    "histogram_score": -1,
+    "final_score": 52.07,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.678475"
+  },
+  "RJ_AMERICAS_RECREIO_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 86.42,
+    "histogram_score": -1,
+    "final_score": 86.42,
+    "status": "BOM",
+    "issues": [],
+    "summary": "Câmera bem posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.718740"
+  },
+  "RJ_AMERICAS_RECREIO_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 78.37,
+    "histogram_score": -1,
+    "final_score": 78.37,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.757771"
+  },
+  "RJ_AMERICAS_RECREIO_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 74.0,
+    "histogram_score": -1,
+    "final_score": 74.0,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.799112"
+  },
+  "RJ_Duque_de_Caxias_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 61.78,
+    "histogram_score": -1,
+    "final_score": 61.78,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.838983"
+  },
+  "RJ_Duque_de_Caxias_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 48.67,
+    "histogram_score": -1,
+    "final_score": 48.67,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.879216"
+  },
+  "RJ_Duque_de_Caxias_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 53.47,
+    "histogram_score": -1,
+    "final_score": 53.47,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.918448"
+  },
+  "RJ_FRANCISCO_REAL_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 51.98,
+    "histogram_score": -1,
+    "final_score": 51.98,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.957819"
+  },
+  "RJ_FRANCISCO_REAL_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 66.66,
+    "histogram_score": -1,
+    "final_score": 66.66,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:39.997757"
+  },
+  "RJ_FRANCISCO_REAL_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 41.1,
+    "histogram_score": -1,
+    "final_score": 41.1,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.037466"
+  },
+  "RJ_NELSON_CARDOSO_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 74.28,
+    "histogram_score": -1,
+    "final_score": 74.28,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.076067"
+  },
+  "RJ_NELSON_CARDOSO_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 47.39,
+    "histogram_score": -1,
+    "final_score": 47.39,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.115504"
+  },
+  "RJ_NELSON_CARDOSO_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 58.98,
+    "histogram_score": -1,
+    "final_score": 58.98,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.155058"
+  },
+  "Radial_Leste_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 69.89,
+    "histogram_score": -1,
+    "final_score": 69.89,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.195530"
+  },
+  "Radial_Leste_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 44.04,
+    "histogram_score": -1,
+    "final_score": 44.04,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.236303"
+  },
+  "Radial_Leste_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 35.37,
+    "histogram_score": -1,
+    "final_score": 35.37,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.276327"
+  },
+  "Rebouças_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 59.45,
+    "histogram_score": -1,
+    "final_score": 59.45,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.317384"
+  },
+  "Rebouças_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 57.1,
+    "histogram_score": -1,
+    "final_score": 57.1,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.357063"
+  },
+  "Rebouças_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 51.76,
+    "histogram_score": -1,
+    "final_score": 51.76,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.397528"
+  },
+  "Recife_Av_Agamenon_Magalhaes_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 65.18,
+    "histogram_score": -1,
+    "final_score": 65.18,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.437045"
+  },
+  "Recife_Av_Agamenon_Magalhaes_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.478667"
+  },
+  "Recife_Av_Agamenon_Magalhaes_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 81.64,
+    "histogram_score": -1,
+    "final_score": 81.64,
+    "status": "BOM",
+    "issues": [],
+    "summary": "Câmera bem posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.517987"
+  },
+  "Rib_Preto_Av_Portugal_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 38.98,
+    "histogram_score": -1,
+    "final_score": 38.98,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.558395"
+  },
+  "Rib_Preto_Av_Portugal_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 46.8,
+    "histogram_score": -1,
+    "final_score": 46.8,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.597707"
+  },
+  "Rib_Preto_Av_Portugal_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 58.7,
+    "histogram_score": -1,
+    "final_score": 58.7,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.642621"
+  },
+  "Ribeirao_Maurilio_Biagi_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 65.65,
+    "histogram_score": -1,
+    "final_score": 65.65,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.686210"
+  },
+  "Ribeirao_Maurilio_Biagi_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.727725"
+  },
+  "Ribeirao_Maurilio_Biagi_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 65.17,
+    "histogram_score": -1,
+    "final_score": 65.17,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.769807"
+  },
+  "Ribeirao_Preto_Av_Dom_Pedro_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 78.48,
+    "histogram_score": -1,
+    "final_score": 78.48,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.810201"
+  },
+  "Ribeirao_Preto_Av_Dom_Pedro_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 64.22,
+    "histogram_score": -1,
+    "final_score": 64.22,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.849614"
+  },
+  "Ribeirao_Preto_Av_Dom_Pedro_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 49.55,
+    "histogram_score": -1,
+    "final_score": 49.55,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.889325"
+  },
+  "Ribeirao_Preto_Av_Pres_Vargas_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 51.88,
+    "histogram_score": -1,
+    "final_score": 51.88,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.930464"
+  },
+  "Ribeirao_Preto_Av_Pres_Vargas_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:40.970760"
+  },
+  "Ribeirao_Preto_Av_Pres_Vargas_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 48.78,
+    "histogram_score": -1,
+    "final_score": 48.78,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.010666"
+  },
+  "Rio_das_Pedras_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 53.88,
+    "histogram_score": -1,
+    "final_score": 53.88,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.051575"
+  },
+  "Rio_das_Pedras_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 65.31,
+    "histogram_score": -1,
+    "final_score": 65.31,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.091269"
+  },
+  "Rio_das_Pedras_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 36.63,
+    "histogram_score": -1,
+    "final_score": 36.63,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.131947"
+  },
+  "SBC_Av_do_Taboão_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 77.02,
+    "histogram_score": -1,
+    "final_score": 77.02,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.185772"
+  },
+  "SBC_Av_do_Taboão_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 74.35,
+    "histogram_score": -1,
+    "final_score": 74.35,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.224096"
+  },
+  "SBC_Av_do_Taboão_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 47.13,
+    "histogram_score": -1,
+    "final_score": 47.13,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.263417"
+  },
+  "SJRP_BADY_BASSITT_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 46.33,
+    "histogram_score": -1,
+    "final_score": 46.33,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.303361"
+  },
+  "SJRP_BADY_BASSITT_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 50.3,
+    "histogram_score": -1,
+    "final_score": 50.3,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.343520"
+  },
+  "SJRP_BADY_BASSITT_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 55.85,
+    "histogram_score": -1,
+    "final_score": 55.85,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.383091"
+  },
+  "SJRP_PHILADELPHO_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 54.67,
+    "histogram_score": -1,
+    "final_score": 54.67,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.423444"
+  },
+  "SJRP_PHILADELPHO_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 44.45,
+    "histogram_score": -1,
+    "final_score": 44.45,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.463436"
+  },
+  "SJRP_PHILADELPHO_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.92,
+    "histogram_score": -1,
+    "final_score": 99.92,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.503319"
+  },
+  "SP_ARMANDO_ARRUDA_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 62.3,
+    "histogram_score": -1,
+    "final_score": 62.3,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.545361"
+  },
+  "SP_ARMANDO_ARRUDA_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 45.7,
+    "histogram_score": -1,
+    "final_score": 45.7,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.586465"
+  },
+  "SP_ARMANDO_ARRUDA_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 32.55,
+    "histogram_score": -1,
+    "final_score": 32.55,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.626502"
+  },
+  "SP_Av_Inajar_de_Souza_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 49.63,
+    "histogram_score": -1,
+    "final_score": 49.63,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.667915"
+  },
+  "SP_Av_Inajar_de_Souza_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 28.88,
+    "histogram_score": -1,
+    "final_score": 28.88,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.709666"
+  },
+  "SP_Av_Inajar_de_Souza_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 56.37,
+    "histogram_score": -1,
+    "final_score": 56.37,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.749635"
+  },
+  "SP_Estrada_Itapecerica_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 48.7,
+    "histogram_score": -1,
+    "final_score": 48.7,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.789536"
+  },
+  "SP_Estrada_Itapecerica_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.94,
+    "histogram_score": -1,
+    "final_score": 99.94,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.830287"
+  },
+  "SP_Estrada_Itapecerica_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 37.46,
+    "histogram_score": -1,
+    "final_score": 37.46,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.871189"
+  },
+  "Salvador_Av_ACM_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.912490"
+  },
+  "Salvador_Av_ACM_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:41.959816"
+  },
+  "Salvador_Av_ACM_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.000145"
+  },
+  "Salvador_Av_Manoel_Dias_da_Silva_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 63.68,
+    "histogram_score": -1,
+    "final_score": 63.68,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.040656"
+  },
+  "Salvador_Av_Manoel_Dias_da_Silva_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 68.84,
+    "histogram_score": -1,
+    "final_score": 68.84,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.080964"
+  },
+  "Salvador_Av_Manoel_Dias_da_Silva_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.122335"
+  },
+  "Salvador_Octavio_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 72.35,
+    "histogram_score": -1,
+    "final_score": 72.35,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.161580"
+  },
+  "Salvador_Octavio_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 47.92,
+    "histogram_score": -1,
+    "final_score": 47.92,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.202598"
+  },
+  "Salvador_Octavio_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 21.99,
+    "histogram_score": -1,
+    "final_score": 21.99,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.243788"
+  },
+  "Salvador_R_Silveira_Martins_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 33.95,
+    "histogram_score": -1,
+    "final_score": 33.95,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.283660"
+  },
+  "Salvador_R_Silveira_Martins_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 29.46,
+    "histogram_score": -1,
+    "final_score": 29.46,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.323604"
+  },
+  "Salvador_R_Silveira_Martins_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 49.23,
+    "histogram_score": -1,
+    "final_score": 49.23,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.364380"
+  },
+  "Santo_Andre_Av_dos_Estados_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 29.72,
+    "histogram_score": -1,
+    "final_score": 29.72,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.404665"
+  },
+  "Santo_Andre_Av_dos_Estados_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 64.13,
+    "histogram_score": -1,
+    "final_score": 64.13,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.444110"
+  },
+  "Santo_Andre_Av_dos_Estados_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 48.42,
+    "histogram_score": -1,
+    "final_score": 48.42,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.484366"
+  },
+  "Santos_Conselheiro_Nebias_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.525566"
+  },
+  "Santos_Conselheiro_Nebias_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.91,
+    "histogram_score": -1,
+    "final_score": 99.91,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.566394"
+  },
+  "Santos_Conselheiro_Nebias_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.92,
+    "histogram_score": -1,
+    "final_score": 99.92,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.606344"
+  },
+  "Santos_Santa_Casa_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 64.56,
+    "histogram_score": -1,
+    "final_score": 64.56,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.646549"
+  },
+  "Santos_Santa_Casa_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 29.68,
+    "histogram_score": -1,
+    "final_score": 29.68,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.686253"
+  },
+  "Santos_Santa_Casa_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 49.87,
+    "histogram_score": -1,
+    "final_score": 49.87,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.726409"
+  },
+  "Sao_Gonçalo_Av_Pres_Kennedy_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 58.42,
+    "histogram_score": -1,
+    "final_score": 58.42,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.766257"
+  },
+  "Sao_Gonçalo_Av_Pres_Kennedy_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 69.42,
+    "histogram_score": -1,
+    "final_score": 69.42,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.807039"
+  },
+  "Sao_Gonçalo_Av_Pres_Kennedy_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 68.4,
+    "histogram_score": -1,
+    "final_score": 68.4,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.846776"
+  },
+  "Sao_Miguel_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 53.06,
+    "histogram_score": -1,
+    "final_score": 53.06,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.885339"
+  },
+  "Sao_Miguel_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 46.44,
+    "histogram_score": -1,
+    "final_score": 46.44,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.925565"
+  },
+  "Sao_Miguel_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 20.98,
+    "histogram_score": -1,
+    "final_score": 20.98,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:42.966514"
+  },
+  "Sao_Paulo_Av_Sapopemba_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 60.97,
+    "histogram_score": -1,
+    "final_score": 60.97,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.007935"
+  },
+  "Sao_Paulo_Av_Sapopemba_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 51.73,
+    "histogram_score": -1,
+    "final_score": 51.73,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.049414"
+  },
+  "Sao_Paulo_Av_Sapopemba_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 57.94,
+    "histogram_score": -1,
+    "final_score": 57.94,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.090068"
+  },
+  "Sao_Vicente_Pres_Wilson_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 48.97,
+    "histogram_score": -1,
+    "final_score": 48.97,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.130453"
+  },
+  "Sao_Vicente_Pres_Wilson_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 45.7,
+    "histogram_score": -1,
+    "final_score": 45.7,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.170396"
+  },
+  "Sao_Vicente_Pres_Wilson_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 50.09,
+    "histogram_score": -1,
+    "final_score": 50.09,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.210238"
+  },
+  "Sen_Teotonio_Vilela_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.251458"
+  },
+  "Sen_Teotonio_Vilela_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.92,
+    "histogram_score": -1,
+    "final_score": 99.92,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.292135"
+  },
+  "Sen_Teotonio_Vilela_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 51.68,
+    "histogram_score": -1,
+    "final_score": 51.68,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.332423"
+  },
+  "Serra_Av_Eldes_Scherrer_1_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 68.38,
+    "histogram_score": -1,
+    "final_score": 68.38,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.372635"
+  },
+  "Serra_Av_Eldes_Scherrer_1_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 48.46,
+    "histogram_score": -1,
+    "final_score": 48.46,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.413016"
+  },
+  "Serra_Av_Eldes_Scherrer_1_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 56.08,
+    "histogram_score": -1,
+    "final_score": 56.08,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.454194"
+  },
+  "Soroc_Afonso_Vergueiro_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 41.81,
+    "histogram_score": -1,
+    "final_score": 41.81,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.495134"
+  },
+  "Soroc_Afonso_Vergueiro_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 59.21,
+    "histogram_score": -1,
+    "final_score": 59.21,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.534484"
+  },
+  "Soroc_Afonso_Vergueiro_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 56.48,
+    "histogram_score": -1,
+    "final_score": 56.48,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.575270"
+  },
+  "Soroc_Comitre_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 54.73,
+    "histogram_score": -1,
+    "final_score": 54.73,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.616547"
+  },
+  "Soroc_Comitre_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 61.36,
+    "histogram_score": -1,
+    "final_score": 61.36,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.656304"
+  },
+  "Soroc_Comitre_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 54.24,
+    "histogram_score": -1,
+    "final_score": 54.24,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.697265"
+  },
+  "Sorocaba_Av_Pannunzio_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.95,
+    "histogram_score": -1,
+    "final_score": 99.95,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.738046"
+  },
+  "Sorocaba_Av_Pannunzio_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.93,
+    "histogram_score": -1,
+    "final_score": 99.93,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.778571"
+  },
+  "Sorocaba_Av_Pannunzio_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 99.94,
+    "histogram_score": -1,
+    "final_score": 99.94,
+    "status": "EXCELENTE",
+    "issues": [],
+    "summary": "Câmera perfeitamente posicionada",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.819152"
+  },
+  "Sorocaba_Av_SP_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 45.58,
+    "histogram_score": -1,
+    "final_score": 45.58,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.859221"
+  },
+  "Sorocaba_Av_SP_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 38.11,
+    "histogram_score": -1,
+    "final_score": 38.11,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.899503"
+  },
+  "Sorocaba_Av_SP_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 33.99,
+    "histogram_score": -1,
+    "final_score": 33.99,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.939870"
+  },
+  "Sto_Andre_Dom_Pedro_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 54.33,
+    "histogram_score": -1,
+    "final_score": 54.33,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:43.980121"
+  },
+  "Sto_Andre_Dom_Pedro_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 59.53,
+    "histogram_score": -1,
+    "final_score": 59.53,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:44.021471"
+  },
+  "Sto_Andre_Dom_Pedro_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 58.63,
+    "histogram_score": -1,
+    "final_score": 58.63,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:44.061074"
+  },
+  "Suzano_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 52.86,
+    "histogram_score": -1,
+    "final_score": 52.86,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:44.102908"
+  },
+  "Suzano_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 62.93,
+    "histogram_score": -1,
+    "final_score": 62.93,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:44.142756"
+  },
+  "Suzano_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 50.96,
+    "histogram_score": -1,
+    "final_score": 50.96,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:44.183775"
+  },
+  "Uberlandia_RPacheco_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 54.14,
+    "histogram_score": -1,
+    "final_score": 54.14,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:44.224477"
+  },
+  "Uberlandia_RPacheco_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 42.6,
+    "histogram_score": -1,
+    "final_score": 42.6,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:44.264109"
+  },
+  "Uberlandia_RPacheco_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 72.29,
+    "histogram_score": -1,
+    "final_score": 72.29,
+    "status": "ATENÇÃO",
+    "issues": [],
+    "summary": "Pequeno desalinhamento detectado",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:44.304780"
+  },
+  "Vitoria_Av_NS_da_Penha_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 58.63,
+    "histogram_score": -1,
+    "final_score": 58.63,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:44.346083"
+  },
+  "Vitoria_Av_NS_da_Penha_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 53.12,
+    "histogram_score": -1,
+    "final_score": 53.12,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:44.386287"
+  },
+  "Vitoria_Av_NS_da_Penha_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 51.31,
+    "histogram_score": -1,
+    "final_score": 51.31,
+    "status": "PROBLEMA",
+    "issues": [
+      "Possível movimento da câmera"
+    ],
+    "summary": "Câmera desalinhada ou movida",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:44.426844"
+  },
+  "ricardo-jafet_P1": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 30.86,
+    "histogram_score": -1,
+    "final_score": 30.86,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:44.465421"
+  },
+  "ricardo-jafet_P2": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 27.51,
+    "histogram_score": -1,
+    "final_score": 27.51,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:44.506473"
+  },
+  "ricardo-jafet_P3": {
+    "method": "opencv",
+    "mode": "structural",
+    "ssim_score": 35.43,
+    "histogram_score": -1,
+    "final_score": 35.43,
+    "status": "CRÍTICO",
+    "issues": [
+      "Mudança estrutural significativa"
+    ],
+    "summary": "Câmera severamente desalinhada ou obstruída",
+    "used_claude": false,
+    "analyzed_at": "2025-12-27T18:01:44.547018"
+  },
+  "Av_Cristiano_Machado_P1_P1_Av_Cristiano_Machado_20250529_120744": {
+    "method": "opencv",
+    "mode": "complete",
+    "ssim_score": 44.39,
+    "histogram_score": 85.75,
+    "final_score": 56.8,
+    "status": "PROBLEMA",
+    "issues": [
+      "Mudanças importantes na cena",
+      "Verificar obstruções ou iluminação"
+    ],
+    "summary": "Diferenças significativas detectadas (56.8%)",
+    "used_claude": false,
+    "analyzed_at": "2025-12-26T16:12:20.445938",
+    "reference": "/home/marcelo/sistemas/captura_cameras/data/referencias/Av_Cristiano_Machado_P1.jpg",
+    "current": "cameras/Av_Cristiano_Machado/P1_Av_Cristiano_Machado_20250529_120744.jpg"
+  }
+}

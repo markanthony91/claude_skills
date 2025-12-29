@@ -1,0 +1,323 @@
+{
+  "metadata": {
+    "generated_at": "2025-12-29T20:07:52.441534",
+    "total_files_analyzed": 3522,
+    "anomalies_detected": 353,
+    "contamination_rate": 10.022714366837024,
+    "model": "Isolation Forest",
+    "model_parameters": {
+      "n_estimators": 100,
+      "contamination": 0.1,
+      "random_state": 42
+    }
+  },
+  "statistics": {
+    "all_files": {
+      "count": 3522,
+      "total_size_mb": 216.0922966003418,
+      "mean_size_kb": 62.82751610413118,
+      "median_size_kb": 62.12109375,
+      "std_size_kb": 13.861909332471228,
+      "min_size_kb": 10.982421875,
+      "max_size_kb": 119.0400390625
+    },
+    "normal_files": {
+      "count": 3169,
+      "mean_size_kb": 62.17408574767277,
+      "median_size_kb": 61.6904296875
+    },
+    "anomalous_files": {
+      "count": 353,
+      "mean_size_kb": 68.69358069228045,
+      "median_size_kb": 68.650390625
+    }
+  },
+  "anomaly_breakdown": {
+    "MULTIVARIATE_ANOMALY": {
+      "count": 353,
+      "percentage": 100.0,
+      "examples": [
+        {
+          "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/Marginal_Tiete_Pte_Anhanguera/P1_Marginal_Tiete_Pte_Anhanguera_20251222_183008.jpg",
+          "size_kb": 14.90234375,
+          "severity": "HIGH",
+          "score": -0.7124144234039973
+        },
+        {
+          "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/Marginal_Tiete_Pte_Anhanguera/P1_Marginal_Tiete_Pte_Anhanguera_20251222_192651.jpg",
+          "size_kb": 14.90234375,
+          "severity": "HIGH",
+          "score": -0.7114906459783957
+        },
+        {
+          "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/Marginal_Tiete_Pte_Anhanguera/P1_Marginal_Tiete_Pte_Anhanguera_20251229_114601.jpg",
+          "size_kb": 14.90234375,
+          "severity": "HIGH",
+          "score": -0.7029969336672072
+        },
+        {
+          "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/Marginal_Tiete_Pte_Anhanguera/P1_Marginal_Tiete_Pte_Anhanguera_20251226_190557.jpg",
+          "size_kb": 14.90234375,
+          "severity": "HIGH",
+          "score": -0.7005244575688373
+        },
+        {
+          "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/Marginal_Tiete_Pte_Anhanguera/P1_Marginal_Tiete_Pte_Anhanguera_20251227_173420.jpg",
+          "size_kb": 14.90234375,
+          "severity": "HIGH",
+          "score": -0.6994223986865625
+        }
+      ]
+    }
+  },
+  "top_anomalies": [
+    {
+      "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/Marginal_Tiete_Pte_Anhanguera/P1_Marginal_Tiete_Pte_Anhanguera_20251222_183008.jpg",
+      "filename": "P1_Marginal_Tiete_Pte_Anhanguera_20251222_183008.jpg",
+      "directory": "Marginal_Tiete_Pte_Anhanguera",
+      "size_kb": 14.90234375,
+      "depth": 1,
+      "severity": "HIGH",
+      "anomaly_score": -0.7124144234039973,
+      "reasons": [
+        "MULTIVARIATE_ANOMALY"
+      ]
+    },
+    {
+      "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/Marginal_Tiete_Pte_Anhanguera/P1_Marginal_Tiete_Pte_Anhanguera_20251222_192651.jpg",
+      "filename": "P1_Marginal_Tiete_Pte_Anhanguera_20251222_192651.jpg",
+      "directory": "Marginal_Tiete_Pte_Anhanguera",
+      "size_kb": 14.90234375,
+      "depth": 1,
+      "severity": "HIGH",
+      "anomaly_score": -0.7114906459783957,
+      "reasons": [
+        "MULTIVARIATE_ANOMALY"
+      ]
+    },
+    {
+      "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/Marginal_Tiete_Pte_Anhanguera/P1_Marginal_Tiete_Pte_Anhanguera_20251229_114601.jpg",
+      "filename": "P1_Marginal_Tiete_Pte_Anhanguera_20251229_114601.jpg",
+      "directory": "Marginal_Tiete_Pte_Anhanguera",
+      "size_kb": 14.90234375,
+      "depth": 1,
+      "severity": "HIGH",
+      "anomaly_score": -0.7029969336672072,
+      "reasons": [
+        "MULTIVARIATE_ANOMALY"
+      ]
+    },
+    {
+      "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/Marginal_Tiete_Pte_Anhanguera/P1_Marginal_Tiete_Pte_Anhanguera_20251226_190557.jpg",
+      "filename": "P1_Marginal_Tiete_Pte_Anhanguera_20251226_190557.jpg",
+      "directory": "Marginal_Tiete_Pte_Anhanguera",
+      "size_kb": 14.90234375,
+      "depth": 1,
+      "severity": "HIGH",
+      "anomaly_score": -0.7005244575688373,
+      "reasons": [
+        "MULTIVARIATE_ANOMALY"
+      ]
+    },
+    {
+      "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/Marginal_Tiete_Pte_Anhanguera/P1_Marginal_Tiete_Pte_Anhanguera_20251227_173420.jpg",
+      "filename": "P1_Marginal_Tiete_Pte_Anhanguera_20251227_173420.jpg",
+      "directory": "Marginal_Tiete_Pte_Anhanguera",
+      "size_kb": 14.90234375,
+      "depth": 1,
+      "severity": "HIGH",
+      "anomaly_score": -0.6994223986865625,
+      "reasons": [
+        "MULTIVARIATE_ANOMALY"
+      ]
+    },
+    {
+      "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/Marginal_Tiete_Pte_Anhanguera/P1_Marginal_Tiete_Pte_Anhanguera_20251227_164733.jpg",
+      "filename": "P1_Marginal_Tiete_Pte_Anhanguera_20251227_164733.jpg",
+      "directory": "Marginal_Tiete_Pte_Anhanguera",
+      "size_kb": 14.90234375,
+      "depth": 1,
+      "severity": "HIGH",
+      "anomaly_score": -0.6994223986865625,
+      "reasons": [
+        "MULTIVARIATE_ANOMALY"
+      ]
+    },
+    {
+      "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/Marginal_Tiete_Pte_Anhanguera/P1_Marginal_Tiete_Pte_Anhanguera_20251227_162203.jpg",
+      "filename": "P1_Marginal_Tiete_Pte_Anhanguera_20251227_162203.jpg",
+      "directory": "Marginal_Tiete_Pte_Anhanguera",
+      "size_kb": 14.90234375,
+      "depth": 1,
+      "severity": "HIGH",
+      "anomaly_score": -0.6994223986865625,
+      "reasons": [
+        "MULTIVARIATE_ANOMALY"
+      ]
+    },
+    {
+      "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/Marginal_Tiete_Pte_Anhanguera/P1_Marginal_Tiete_Pte_Anhanguera_20251227_170726.jpg",
+      "filename": "P1_Marginal_Tiete_Pte_Anhanguera_20251227_170726.jpg",
+      "directory": "Marginal_Tiete_Pte_Anhanguera",
+      "size_kb": 14.90234375,
+      "depth": 1,
+      "severity": "HIGH",
+      "anomaly_score": -0.6994223986865625,
+      "reasons": [
+        "MULTIVARIATE_ANOMALY"
+      ]
+    },
+    {
+      "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/FS_RJ_ESTRADA_CACHAMORRA/P2_FS_RJ_ESTRADA_CACHAMORRA_20251229_114632.jpg",
+      "filename": "P2_FS_RJ_ESTRADA_CACHAMORRA_20251229_114632.jpg",
+      "directory": "FS_RJ_ESTRADA_CACHAMORRA",
+      "size_kb": 14.5302734375,
+      "depth": 1,
+      "severity": "HIGH",
+      "anomaly_score": -0.6957757738958019,
+      "reasons": [
+        "MULTIVARIATE_ANOMALY"
+      ]
+    },
+    {
+      "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/FS_RJ_ESTRADA_CACHAMORRA/P2_FS_RJ_ESTRADA_CACHAMORRA_20251227_174319.jpg",
+      "filename": "P2_FS_RJ_ESTRADA_CACHAMORRA_20251227_174319.jpg",
+      "directory": "FS_RJ_ESTRADA_CACHAMORRA",
+      "size_kb": 10.982421875,
+      "depth": 1,
+      "severity": "HIGH",
+      "anomaly_score": -0.6929759353135378,
+      "reasons": [
+        "MULTIVARIATE_ANOMALY"
+      ]
+    },
+    {
+      "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/FS_RJ_ESTRADA_CACHAMORRA/P2_FS_RJ_ESTRADA_CACHAMORRA_20251227_170737.jpg",
+      "filename": "P2_FS_RJ_ESTRADA_CACHAMORRA_20251227_170737.jpg",
+      "directory": "FS_RJ_ESTRADA_CACHAMORRA",
+      "size_kb": 10.982421875,
+      "depth": 1,
+      "severity": "HIGH",
+      "anomaly_score": -0.6925072358547301,
+      "reasons": [
+        "MULTIVARIATE_ANOMALY"
+      ]
+    },
+    {
+      "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/Jundiai_Rodovia_dos_Bandeirantes_Lago_Azul/P3_Jundiai_Rodovia_dos_Bandeirantes_Lago_Azul_20251229_114558.jpg",
+      "filename": "P3_Jundiai_Rodovia_dos_Bandeirantes_Lago_Azul_20251229_114558.jpg",
+      "directory": "Jundiai_Rodovia_dos_Bandeirantes_Lago_Azul",
+      "size_kb": 99.4912109375,
+      "depth": 1,
+      "severity": "HIGH",
+      "anomaly_score": -0.6813610544043742,
+      "reasons": [
+        "MULTIVARIATE_ANOMALY"
+      ]
+    },
+    {
+      "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/Jundiai_Rodovia_dos_Bandeirantes_Lago_Azul/P3_Jundiai_Rodovia_dos_Bandeirantes_Lago_Azul_20251222_192546.jpg",
+      "filename": "P3_Jundiai_Rodovia_dos_Bandeirantes_Lago_Azul_20251222_192546.jpg",
+      "directory": "Jundiai_Rodovia_dos_Bandeirantes_Lago_Azul",
+      "size_kb": 95.70703125,
+      "depth": 1,
+      "severity": "HIGH",
+      "anomaly_score": -0.6792350909023457,
+      "reasons": [
+        "MULTIVARIATE_ANOMALY"
+      ]
+    },
+    {
+      "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/Jundiai_Rodovia_dos_Bandeirantes_Lago_Azul/P3_Jundiai_Rodovia_dos_Bandeirantes_Lago_Azul_20251222_182906.jpg",
+      "filename": "P3_Jundiai_Rodovia_dos_Bandeirantes_Lago_Azul_20251222_182906.jpg",
+      "directory": "Jundiai_Rodovia_dos_Bandeirantes_Lago_Azul",
+      "size_kb": 95.2373046875,
+      "depth": 1,
+      "severity": "HIGH",
+      "anomaly_score": -0.6783165901530945,
+      "reasons": [
+        "MULTIVARIATE_ANOMALY"
+      ]
+    },
+    {
+      "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/Bk_R_Maria_Amalia_Lopes_Azevedo/P3_Bk_R_Maria_Amalia_Lopes_Azevedo_20251227_164738.jpg",
+      "filename": "P3_Bk_R_Maria_Amalia_Lopes_Azevedo_20251227_164738.jpg",
+      "directory": "Bk_R_Maria_Amalia_Lopes_Azevedo",
+      "size_kb": 111.7490234375,
+      "depth": 1,
+      "severity": "HIGH",
+      "anomaly_score": -0.6749065373072828,
+      "reasons": [
+        "MULTIVARIATE_ANOMALY"
+      ]
+    },
+    {
+      "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/Jundiai_Rodovia_dos_Bandeirantes_Lago_Azul/P2_Jundiai_Rodovia_dos_Bandeirantes_Lago_Azul_20251222_192543.jpg",
+      "filename": "P2_Jundiai_Rodovia_dos_Bandeirantes_Lago_Azul_20251222_192543.jpg",
+      "directory": "Jundiai_Rodovia_dos_Bandeirantes_Lago_Azul",
+      "size_kb": 93.484375,
+      "depth": 1,
+      "severity": "HIGH",
+      "anomaly_score": -0.6727784010819076,
+      "reasons": [
+        "MULTIVARIATE_ANOMALY"
+      ]
+    },
+    {
+      "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/Parapua/P3_Parapua_20251227_164734.jpg",
+      "filename": "P3_Parapua_20251227_164734.jpg",
+      "directory": "Parapua",
+      "size_kb": 26.0087890625,
+      "depth": 1,
+      "severity": "HIGH",
+      "anomaly_score": -0.6688867914849869,
+      "reasons": [
+        "MULTIVARIATE_ANOMALY"
+      ]
+    },
+    {
+      "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/Bk_R_Maria_Amalia_Lopes_Azevedo/P3_Bk_R_Maria_Amalia_Lopes_Azevedo_20251222_193040.jpg",
+      "filename": "P3_Bk_R_Maria_Amalia_Lopes_Azevedo_20251222_193040.jpg",
+      "directory": "Bk_R_Maria_Amalia_Lopes_Azevedo",
+      "size_kb": 105.962890625,
+      "depth": 1,
+      "severity": "HIGH",
+      "anomaly_score": -0.6665960728653758,
+      "reasons": [
+        "MULTIVARIATE_ANOMALY"
+      ]
+    },
+    {
+      "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/Cam_Vaz/P3_Cam_Vaz_20251222_183928.jpg",
+      "filename": "P3_Cam_Vaz_20251222_183928.jpg",
+      "directory": "Cam_Vaz",
+      "size_kb": 104.97265625,
+      "depth": 1,
+      "severity": "HIGH",
+      "anomaly_score": -0.6663531874042423,
+      "reasons": [
+        "MULTIVARIATE_ANOMALY"
+      ]
+    },
+    {
+      "filepath": "/home/marcelo/sistemas/captura_cameras/cameras/Fortaleza_Av_Washington_Soares/P3_Fortaleza_Av_Washington_Soares_20251229_114550.jpg",
+      "filename": "P3_Fortaleza_Av_Washington_Soares_20251229_114550.jpg",
+      "directory": "Fortaleza_Av_Washington_Soares",
+      "size_kb": 117.013671875,
+      "depth": 1,
+      "severity": "HIGH",
+      "anomaly_score": -0.6658905118034448,
+      "reasons": [
+        "MULTIVARIATE_ANOMALY"
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "INFO",
+      "issue": "No critical issues detected",
+      "action": "Directory structure appears healthy. Continue regular monitoring.",
+      "affected_files": 0
+    }
+  ]
+}

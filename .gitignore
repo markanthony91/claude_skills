@@ -84,3 +84,12 @@ screenshot*.png
 *.tmp
 *.temp
 .cache/
+
+# Cache e metadata de câmeras (gerados automaticamente)
+captura_cameras/data/analysis_cache.json
+captura_cameras/data/camera_metadata.json
+
+# Diretórios de auditoria de sistema
+server-audit/
+server-audit-full/
+system-audit-*/

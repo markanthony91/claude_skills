@@ -8,6 +8,9 @@
 
 - [Scripts Disponíveis](#-scripts-disponíveis)
 - [install-glances-linux.sh](#-install-glances-linuxsh)
+- [bluetooth-fix.sh](#-bluetooth-fixsh)
+- [setup-n8n-docker.sh](#-setup-n8n-dockersh)
+- [setup_v4l2loopback_ubuntu2004.sh](#-setup_v4l2loopback_ubuntu2004sh)
 - [Requisitos](#-requisitos)
 - [Uso](#-uso)
 - [Troubleshooting](#-troubleshooting)
@@ -19,6 +22,9 @@
 | Script | Descrição | Versão | Autor |
 |--------|-----------|--------|-------|
 | **install-glances-linux.sh** | Instalador completo do Glances com Docker, Prometheus e Tailscale | 2.1 | Mark - Aiknow Systems / BK Brasil |
+| **bluetooth-fix.sh** | Diagnóstico e correção de problemas Bluetooth (Realtek RTL8852BE) | 2.0 | Claude AI Assistant |
+| **setup-n8n-docker.sh** | Instalador do N8N (automação/workflow) via Docker | 0.236.3 | Autotic |
+| **setup_v4l2loopback_ubuntu2004.sh** | Configurador de câmera virtual v4l2loopback para WSL/Ubuntu 20.04 | 1.0 | - |
 
 ---
 
@@ -519,6 +525,274 @@ docker update glances --env GLANCES_OPT="-w -e -t 5"
 # Limitar histórico de métricas
 # Desabilitar plugins não usados
 ```
+
+---
+
+## 🔧 bluetooth-fix.sh
+
+### Descrição
+
+Script de **diagnóstico e correção automatizada** de problemas Bluetooth em Linux (Pop!_OS, Ubuntu e derivados), com suporte especial para adaptadores Realtek RTL8852BE problemáticos no kernel 6.12+.
+
+### Features
+
+- ✅ **Diagnóstico completo** do sistema Bluetooth
+- ✅ **Detecção automática** de hardware (USB/PCI)
+- ✅ **Verificação de módulos** do kernel (bluetooth, btusb, btintel, btrtl)
+- ✅ **Verificação de serviços** systemd
+- ✅ **Correção específica Realtek RTL8852BE**
+- ✅ **Menu interativo** com múltiplas opções
+- ✅ **Interface colorida** com status visual
+- ✅ **Reinício automático** de serviços
+
+### Quando Usar
+
+- Bluetooth não funciona após atualização do sistema
+- Adaptador Bluetooth não detectado
+- Problemas com Realtek RTL8852BE (ID: 0bda:887b)
+- Kernel 6.12+ causando problemas
+- Serviço bluetooth inativo ou com falhas
+
+### Uso
+
+```bash
+cd /home/marcelo/sistemas/scripts
+
+# Executar (NÃO usar sudo!)
+./bluetooth-fix.sh
+```
+
+**IMPORTANTE:** Execute como usuário normal, não como root!
+
+### Menu de Opções
+
+O script oferece um menu interativo com:
+
+1. **Diagnóstico Completo** - Verifica todo o sistema
+2. **Reiniciar Serviço Bluetooth** - Restart rápido
+3. **Recarregar Módulos** - Recarrega btusb, bluetooth, etc.
+4. **Verificar Logs** - Mostra logs do systemd
+5. **Testar Dispositivos** - Lista devices pareados
+6. **Reinstalar Bluez** - Reinstala stack Bluetooth
+7. **Correção Realtek RTL8852BE** - Fix específico para este adaptador
+
+### Hardware Suportado
+
+- ✅ Adaptadores USB Bluetooth
+- ✅ Adaptadores PCI/PCIe Bluetooth
+- ✅ Intel Wireless Bluetooth
+- ✅ **Realtek RTL8852BE** (com correção específica)
+- ✅ Qualcomm Atheros
+- ✅ Broadcom
+
+### Troubleshooting
+
+**Problema: Script não executa**
+```bash
+chmod +x bluetooth-fix.sh
+./bluetooth-fix.sh
+```
+
+**Problema: "Deve ser executado como usuário normal"**
+```bash
+# NÃO faça: sudo ./bluetooth-fix.sh
+# Correto:
+./bluetooth-fix.sh
+```
+
+**Problema: Realtek RTL8852BE ainda não funciona**
+- Use opção 7 do menu
+- Reinicie o sistema após a correção
+- Verifique se kernel está atualizado
+
+---
+
+## 🔄 setup-n8n-docker.sh
+
+### Descrição
+
+Instalador automatizado do **N8N** (plataforma de automação/workflow) via Docker. O N8N é uma alternativa open-source ao Zapier/Make.com para criar automações e workflows.
+
+### O que é o N8N?
+
+**N8N** (nodemation) é uma ferramenta de automação que permite:
+- 🔗 Conectar 400+ serviços e APIs
+- 🤖 Criar workflows visuais (no-code/low-code)
+- ⚡ Automações complexas com lógica condicional
+- 📊 Integração com webhooks e APIs REST
+- 🔧 Processamento de dados e transformações
+- 📅 Agendamento de tarefas (cron)
+
+### Features do Script
+
+- ✅ **Instalação automática** do Docker
+- ✅ **Atualização** do sistema (apt update/upgrade)
+- ✅ **Configuração de timezone** (America/Sao_Paulo)
+- ✅ **Container N8N** na porta 5678
+- ✅ **Persistência de dados** em ~/.n8n
+- ✅ **Auto-restart** habilitado
+- ✅ **Versão específica** (0.236.3)
+
+### Uso
+
+```bash
+cd /home/marcelo/sistemas/scripts
+
+# Executar instalação
+bash setup-n8n-docker.sh
+```
+
+### Acesso
+
+Após instalação, acesse:
+```
+http://<seu-ip>:5678
+```
+
+O script mostra a URL automaticamente no final.
+
+### Gerenciar Container
+
+```bash
+# Ver status
+docker ps | grep n8n
+
+# Ver logs
+docker logs n8n
+
+# Parar
+docker stop n8n
+
+# Iniciar
+docker start n8n
+
+# Reiniciar
+docker restart n8n
+
+# Remover
+docker stop n8n && docker rm n8n
+```
+
+### Dados Persistentes
+
+Todos os workflows e configurações ficam em:
+```
+~/.n8n/
+```
+
+### Recursos da Comunidade
+
+- **Telegram N8N Brasil:** https://t.me/n8nbr
+- **WhatsApp:** https://chat.whatsapp.com/EST1hV8aITs33IdS0BoNOY
+- **Curso Setup:** https://autotic.com.br/n8n-curso-completo-de-setup
+- **Curso Workflows:** https://autotic.com.br/curso-intensivo-de-n8n
+
+### Use Cases
+
+- Automação de marketing (envio de emails, posts sociais)
+- Integração entre sistemas (CRM, ERP, e-commerce)
+- Processamento de dados (ETL, transformações)
+- Notificações e alertas
+- Backups automatizados
+- Webhooks e APIs
+
+---
+
+## 📹 setup_v4l2loopback_ubuntu2004.sh
+
+### Descrição
+
+Script para configurar **v4l2loopback** (câmera virtual) em Ubuntu 20.04 LTS e WSL2. Permite criar um dispositivo de vídeo virtual que pode ser usado por aplicações como OBS, Zoom, Teams, etc.
+
+### O que é o v4l2loopback?
+
+**v4l2loopback** é um módulo do kernel Linux que cria dispositivos de vídeo virtuais (/dev/videoN). Útil para:
+- 🎥 Streaming com OBS para aplicações que precisam de webcam
+- 🎬 Captura de tela como fonte de vídeo
+- 🎮 Compartilhamento de jogos como webcam
+- 💻 Desenvolvimento e testes de aplicações de vídeo
+- 🎓 Aulas remotas com múltiplas fontes de vídeo
+
+### Features do Script
+
+- ✅ **Otimizado para Ubuntu 20.04 LTS**
+- ✅ **Compatível com WSL2**
+- ✅ **Verificação de dependências**
+- ✅ **Busca automática** de módulos .ko alternativos
+- ✅ **Configuração persistente**
+- ✅ **Device em /dev/video10**
+- ✅ **Label personalizado**: "WSL Virtual Cam (Ubuntu 20.04)"
+- ✅ **Tratamento de erros** robusto
+
+### Uso
+
+```bash
+cd /home/marcelo/sistemas/scripts
+
+# Executar com sudo (OBRIGATÓRIO)
+sudo ./setup_v4l2loopback_ubuntu2004.sh
+```
+
+### Configuração Padrão
+
+```bash
+VIDEO_DEVICE=/dev/video10
+CARD_LABEL="WSL Virtual Cam (Ubuntu 20.04)"
+```
+
+### Verificar Instalação
+
+```bash
+# Listar dispositivos de vídeo
+ls -la /dev/video*
+
+# Ver informações do device
+v4l2-ctl --list-devices
+
+# Testar com ffplay
+ffplay /dev/video10
+```
+
+### Usar com OBS
+
+1. No OBS, adicione fonte "Câmera Virtual"
+2. Selecione "/dev/video10"
+3. Configure output para este device
+4. Aplicações verão como webcam normal
+
+### Troubleshooting
+
+**Problema: Módulo não carrega**
+```bash
+# Verificar se módulo existe
+modinfo v4l2loopback
+
+# Recompilar DKMS
+sudo dkms install v4l2loopback/0.12.7
+```
+
+**Problema: /dev/video10 não existe**
+```bash
+# Carregar módulo manualmente
+sudo modprobe v4l2loopback video_nr=10 card_label="Virtual Cam"
+
+# Verificar
+ls -la /dev/video10
+```
+
+**Problema: "Permission denied"**
+```bash
+# Adicionar usuário ao grupo video
+sudo usermod -aG video $USER
+
+# Fazer logout e login
+```
+
+### Compatibilidade
+
+- ✅ Ubuntu 20.04 LTS
+- ✅ WSL2 (Windows Subsystem for Linux)
+- ⚠️ Outras distros: Pode funcionar mas script é otimizado para Ubuntu 20.04
 
 ---
 

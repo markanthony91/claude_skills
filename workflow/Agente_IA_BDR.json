@@ -1,0 +1,953 @@
+{
+  "name": "Agente IA BDR",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "aaed208c-e918-49a6-94ed-c2c8eedfb446",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -940,
+        400
+      ],
+      "id": "19e8dd63-70df-4472-9b86-a86840addb05",
+      "name": "Webhook",
+      "webhookId": "aaed208c-e918-49a6-94ed-c2c8eedfb446"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "ea9512f2-e67c-4ef7-992f-893c75cfee8f",
+              "leftValue": "={{ $json.fromMe }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -500,
+        400
+      ],
+      "id": "49284720-b03a-4219-9aea-37016a065520",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "6de225a3-3524-4810-8ce2-6b96d1dff463",
+              "leftValue": "={{ $json.combinedText1 }}",
+              "rightValue": "={{ $json.combinedText2 }}",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2.2,
+      "position": [
+        1520,
+        200
+      ],
+      "id": "3d974ff8-6e19-4f2f-be6c-ecdb39a2a1aa",
+      "name": "Filter"
+    },
+    {
+      "parameters": {
+        "resource": "audio",
+        "operation": "transcribe",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.7,
+      "position": [
+        540,
+        220
+      ],
+      "id": "9e7505ed-6c2c-4038-b4df-b08667bfe440",
+      "name": "OpenAI2",
+      "credentials": {
+        "openAiApi": {
+          "id": "PxFjHLWCX1pBjmgK",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "toBinary",
+        "sourceProperty": "=base64",
+        "options": {
+          "fileName": "transcricao.ogg",
+          "mimeType": "audio/ogg"
+        }
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        280,
+        220
+      ],
+      "id": "d5063fff-46e0-42ff-90cc-5729033baab5",
+      "name": "Base64 to Audio"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "5d408baf-2ff4-43fb-94a1-79601221051a",
+              "name": "base64",
+              "value": "={{ $('Webhook').item.json.body.data.message.base64 }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        20,
+        220
+      ],
+      "id": "7542b2c5-f9bf-4272-be8d-bdc3f23032fd",
+      "name": "Base64 Audio"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        1100,
+        480
+      ],
+      "id": "780568d8-4361-4393-af19-9850c77c6946",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Recupera o texto da variável\nconst output = $('SDR IA').item.json.output;\n\n// Faz o split usando '\\n\\n' como delimitador\nconst splitOutput = output.split('\\n\\n');\n\n// Retorna cada parte do split como um item separado\nreturn splitOutput.map(part => ({\n  json: {\n    splitPart: part,\n  },\n}));\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        800,
+        480
+      ],
+      "id": "685d5984-608a-4e54-9a12-6050093d7fd6",
+      "name": "Quebrar Mensagem",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "jsCode": "// Código atualizado para o node 'Code' no n8n\nconst array1 = $('Pegar Memória 1').item.json.Message1;\nconst array2 = $('Pegar Memória 2').item.json.Message2;\n\n// Combina os elementos dos arrays em strings únicas\nconst combinedText1 = array1.join(' ');\nconst combinedText2 = array2.join(' ');\n\n// Retorna os resultados no formato exigido pelo n8n\nreturn [\n  {\n    json: {\n      combinedText1,\n      combinedText2,\n    },\n  },\n];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1300,
+        200
+      ],
+      "id": "6aa427ae-3bc1-4d38-9b57-5664e31d6e82",
+      "name": "Verificar Combinação"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "propertyName": "Message1",
+        "key": "={{ $('Dados').item.json.remoteJid }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        1200,
+        0
+      ],
+      "id": "7420a149-5bb9-4c04-82b4-96a3f232e3f0",
+      "name": "Pegar Memória 1",
+      "credentials": {
+        "redis": {
+          "id": "QRVLJNHLcQHkAqPM",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "propertyName": "Message2",
+        "key": "={{ $('Dados').item.json.remoteJid }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        1080,
+        200
+      ],
+      "id": "352b8501-605b-42dd-8f9e-a9d4a8753fcb",
+      "name": "Pegar Memória 2",
+      "credentials": {
+        "redis": {
+          "id": "QRVLJNHLcQHkAqPM",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1400,
+        0
+      ],
+      "id": "c46b941c-922a-40c9-a135-f138d91a54d7",
+      "name": "Delay",
+      "webhookId": "05586b1c-449b-4da8-9702-da2c222e7551"
+    },
+    {
+      "parameters": {
+        "operation": "push",
+        "list": "={{ $('Dados').item.json.remoteJid }}",
+        "messageData": "={{ $('Dados').item.json.conversation }}",
+        "tail": true
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        420,
+        -20
+      ],
+      "id": "16ee96cb-dc94-46dd-ab5e-7009b4763650",
+      "name": "Memória de Texto",
+      "credentials": {
+        "redis": {
+          "id": "QRVLJNHLcQHkAqPM",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "push",
+        "list": "={{ $('Dados').item.json.remoteJid }}",
+        "messageData": "={{ $json.text }}",
+        "tail": true
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        760,
+        220
+      ],
+      "id": "71bec99e-93cb-4f65-9395-f39ecc4e5678",
+      "name": "Memória de Áudio",
+      "credentials": {
+        "redis": {
+          "id": "QRVLJNHLcQHkAqPM",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $('Dados').item.json.messageType }}",
+                    "rightValue": "conversation",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Text"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "0807bcd7-a626-40ca-ae74-45f5565d9209",
+                    "leftValue": "={{ $('Dados').item.json.messageType }}",
+                    "rightValue": "audioMessage",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Audio"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        -260,
+        480
+      ],
+      "id": "0eb4aac6-c6a0-4a12-9cd8-94316401a430",
+      "name": "Tipo de Mensagem",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "2911e082-e712-4b85-bcf7-611f60d1559f",
+              "name": "remoteJid",
+              "value": "={{ $json.body.data.key.remoteJid }}",
+              "type": "string"
+            },
+            {
+              "id": "f2af5f89-8957-4811-9839-8ef571b38e5c",
+              "name": "fromMe",
+              "value": "={{ $json.body.data.key.fromMe }}",
+              "type": "boolean"
+            },
+            {
+              "id": "16a9c5c0-5a35-4db2-ab94-ef251115696f",
+              "name": "conversation",
+              "value": "={{ $json.body.data.message.conversation }}",
+              "type": "string"
+            },
+            {
+              "id": "20937be5-8999-4d95-91cb-5aa9490f166c",
+              "name": "date_time",
+              "value": "={{ $json.body.date_time }}",
+              "type": "string"
+            },
+            {
+              "id": "fa5a0f16-b265-40ab-9299-135659bbf90e",
+              "name": "messageType",
+              "value": "={{ $json.body.data.messageType }}",
+              "type": "string"
+            },
+            {
+              "id": "95ca6185-7794-4411-82c5-d30676a6ca52",
+              "name": "evo.instance",
+              "value": "={{ $json.body.instance }}",
+              "type": "string"
+            },
+            {
+              "id": "66fcd40d-88da-4117-958d-7b4a29454136",
+              "name": "evo.server_url",
+              "value": "={{ $json.body.server_url }}",
+              "type": "string"
+            },
+            {
+              "id": "477ee9d8-59d3-4dd4-9eab-038367517cb1",
+              "name": "evo.apikey",
+              "value": "={{ $json.body.apikey }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -720,
+        400
+      ],
+      "id": "59fd01ef-4903-4613-b935-d967dcb11fde",
+      "name": "Dados"
+    },
+    {
+      "parameters": {
+        "operation": "delete",
+        "key": "={{ $('Dados').item.json.remoteJid }}"
+      },
+      "type": "n8n-nodes-base.redis",
+      "typeVersion": 1,
+      "position": [
+        560,
+        480
+      ],
+      "id": "233da2f1-b1f0-4d3f-bc97-f5b2d530f504",
+      "name": "Deletar Memória",
+      "credentials": {
+        "redis": {
+          "id": "QRVLJNHLcQHkAqPM",
+          "name": "Redis account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Recebe todos os itens de entrada\nconst items = $input.all();\n\n// Verifica se há itens de entrada\nif (!items || items.length === 0) {\n  return []; // Retorna um array vazio se não houver entrada\n}\n\n// Array para armazenar os resultados\nconst output = [];\n\n// Processa cada item de entrada\nitems.forEach(item => {\n  // Assume que o texto está no campo \"splitPart\" do item\n  const text = item.json.splitPart || \"\";\n\n  // Conta o número de caracteres na mensagem\n  const characterCount = text.length;\n\n  // Calcula o tempo em milissegundos: 100 caracteres = 6 segundos (6000 ms)\n  const milliseconds = Math.floor((characterCount / 100) * 6000);\n\n  // Adiciona o resultado ao array de saída\n  output.push({ json: { milliseconds } });\n});\n\n// Retorna os resultados\nreturn output;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1340,
+        640
+      ],
+      "id": "bc63b59d-24a1-4adb-b913-42674a19def3",
+      "name": "Contabilizar Caracteres"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('Dados').item.json.evo.server_url }}/message/sendText/{{ $('Dados').item.json.evo.instance }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apiKey",
+              "value": "={{ $('Dados').item.json.evo.apikey }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "number",
+              "value": "={{ $('Dados').item.json.remoteJid }}"
+            },
+            {
+              "name": "text",
+              "value": "={{ $('Loop Over Items').item.json.splitPart.replaceAll('**', '*') }}"
+            },
+            {
+              "name": "delay",
+              "value": "={{ $json.milliseconds }}"
+            }
+          ]
+        },
+        "options": {
+          "allowUnauthorizedCerts": true
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1540,
+        640
+      ],
+      "id": "b4f1daab-0d7d-4517-b4f7-46d9c81ab1e6",
+      "name": "Enviar Texto"
+    },
+    {
+      "parameters": {
+        "model": "gpt-4.1-mini",
+        "options": {
+          "frequencyPenalty": 0.2,
+          "presencePenalty": 0.2,
+          "temperature": 0.8
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1,
+      "position": [
+        140,
+        780
+      ],
+      "id": "d9a2bd44-2a73-4c59-aa39-b2249cef10e8",
+      "name": "OpenAI Chat Model1",
+      "credentials": {
+        "openAiApi": {
+          "id": "PxFjHLWCX1pBjmgK",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.combinedText2 }}",
+        "options": {
+          "systemMessage": "=Data e horário atual: {{ $now }}\n\n## CONTEXTO\n\nVocê é Lucas, um BDR que faz disparos frios para clínicas de estética, oferecendo uma solução de Agente IA para automatizar o atendimento e melhorar a experiência do cliente. Seu objetivo é despertar curiosidade e levar o lead para uma reunião onde poderá apresentar a solução de forma personalizada.\n\n## PERSONALIDADE\n\n- Confiante, direto e persuasivo.\n- Focado em gerar curiosidade e urgência.\n- Fala como quem sabe que tem a solução que o lead precisa.\n\n## REGRAS\n\n- Não use o nome do lead – pois não o conhece.\n- Comece de forma aberta e profissional, sem parecer robótico.\n- Seja vendedor e mostre imediatamente o valor e o diferencial.\n- Leve a conversa para a reunião de forma natural e convincente.\n\n## FUNIL\n\n### Etapa 1 – Abertura e Gancho\n\n“Olá! Sou [Seu Nome], especialista em soluções que ajudam clínicas de estética a multiplicar atendimentos sem sobrecarregar a equipe. Tenho visto muitas clínicas crescendo muito mais rápido quando automatizam o atendimento. Me conta: você já pensou em ter um assistente virtual 24 horas para cuidar de todos os clientes?”\n\n### Etapa 2 – Descoberta e Criação de Necessidade\n\n“Eu sei que a rotina em uma clínica é corrida, e muitas vezes acaba ficando difícil responder todo mundo na hora. Você já percebeu como isso pode impactar o faturamento ou a satisfação dos clientes?”\n\n### Etapa 3 – Validação e Autoridade\n\n“Isso é exatamente o que estamos ajudando a resolver com nosso Agente IA. Ele automatiza o atendimento e garante que ninguém fica sem resposta, sem perder a qualidade do atendimento humano. Quer ver como isso pode funcionar para a sua clínica?”\n\n### Etapa 4 – Encaminhamento para a Reunião\n\n“Ótimo! Vou te mostrar em poucos minutos como funciona e quais resultados reais pode trazer. Você prefere conversar amanhã ou depois de amanhã? Tenho horários flexíveis e posso me adaptar ao que for melhor para você.”"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        160,
+        480
+      ],
+      "id": "9d4959c4-1b5e-401c-9d4a-83551fc23e16",
+      "name": "SDR IA"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        -260,
+        220
+      ],
+      "id": "f3ee3615-373a-4099-ba63-d7289de426a3",
+      "name": "No Operation, do nothing"
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $('Dados').item.json.remoteJid }}",
+        "contextWindowLength": 30
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        680,
+        780
+      ],
+      "id": "8ee05bb8-3940-4d98-818a-cbd2d4581b52",
+      "name": "Simple Memory"
+    },
+    {
+      "parameters": {
+        "content": "## Não mexer",
+        "height": 260,
+        "width": 180,
+        "color": 2
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -760,
+        320
+      ],
+      "typeVersion": 1,
+      "id": "072b18c7-b13e-4e7f-b068-2dfed65d9072",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "## Se o lead enviou TEXTO",
+        "height": 220,
+        "width": 980,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -20,
+        -60
+      ],
+      "typeVersion": 1,
+      "id": "bbc05fd8-56e5-44cc-8312-abe54c9940f2",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "## Se o lead enviou ÁUDIO",
+        "height": 220,
+        "width": 980,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -20,
+        160
+      ],
+      "typeVersion": 1,
+      "id": "0d41ce5b-86c6-46ea-bb95-0f405c3dbaf0",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "content": "## Aguardando mais mensagens do lead para JUNTAR TUDO",
+        "height": 440,
+        "width": 820
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        960,
+        -60
+      ],
+      "typeVersion": 1,
+      "id": "334349e3-5eda-4980-981f-c5b62c965944",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "content": "### Coloque sua credencial da Openai",
+        "height": 240,
+        "color": 7
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        60,
+        700
+      ],
+      "typeVersion": 1,
+      "id": "8803772b-783c-409e-b34f-86afa02f96bf",
+      "name": "Sticky Note4"
+    },
+    {
+      "parameters": {
+        "content": "## Inteligência por trás",
+        "height": 560,
+        "width": 980,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -20,
+        380
+      ],
+      "typeVersion": 1,
+      "id": "ac73f6c6-c2d4-4e5f-a354-3495affda0be",
+      "name": "Sticky Note5"
+    },
+    {
+      "parameters": {
+        "content": "## Envio das mensagens fracionadas",
+        "height": 560,
+        "width": 820,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        960,
+        380
+      ],
+      "typeVersion": 1,
+      "id": "a16655f7-5a2f-435f-b0a0-2a9e7cbd4020",
+      "name": "Sticky Note6"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Dados",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "No Operation, do nothing",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Tipo de Mensagem",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter": {
+      "main": [
+        [
+          {
+            "node": "SDR IA",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI2": {
+      "main": [
+        [
+          {
+            "node": "Memória de Áudio",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Base64 to Audio": {
+      "main": [
+        [
+          {
+            "node": "OpenAI2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Base64 Audio": {
+      "main": [
+        [
+          {
+            "node": "Base64 to Audio",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Contabilizar Caracteres",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Quebrar Mensagem": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Verificar Combinação": {
+      "main": [
+        [
+          {
+            "node": "Filter",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pegar Memória 1": {
+      "main": [
+        [
+          {
+            "node": "Delay",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pegar Memória 2": {
+      "main": [
+        [
+          {
+            "node": "Verificar Combinação",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Delay": {
+      "main": [
+        [
+          {
+            "node": "Pegar Memória 2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Memória de Texto": {
+      "main": [
+        [
+          {
+            "node": "Pegar Memória 1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Memória de Áudio": {
+      "main": [
+        [
+          {
+            "node": "Pegar Memória 1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tipo de Mensagem": {
+      "main": [
+        [
+          {
+            "node": "Memória de Texto",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Base64 Audio",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Dados": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Deletar Memória": {
+      "main": [
+        [
+          {
+            "node": "Quebrar Mensagem",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Contabilizar Caracteres": {
+      "main": [
+        [
+          {
+            "node": "Enviar Texto",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Enviar Texto": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "SDR IA",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "SDR IA": {
+      "main": [
+        [
+          {
+            "node": "Deletar Memória",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "SDR IA",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "63e11646-97e8-470a-82cb-82db7d95b638",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "c1a98b32419ff5956f14e537c7a10a596546bbae422fcfbbb2bb986641ab09a0"
+  },
+  "id": "v2IzjEY3GtOXNsyO",
+  "tags": [
+    {
+      "createdAt": "2025-05-22T05:39:10.204Z",
+      "updatedAt": "2025-05-22T05:39:10.204Z",
+      "id": "ME4qtMRuBq2DTMrA",
+      "name": "Anderson Adelino"
+    }
+  ]
+}

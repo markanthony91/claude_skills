@@ -1,0 +1,290 @@
+{
+  "name": "Modelos iPhone",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "5655da60-42fa-4f70-901a-575f71b9f9d9",
+      "name": "Execute Workflow Trigger",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1,
+      "position": [
+        380,
+        360
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "2b028bb9-de07-4197-98bc-d69adc91f065",
+              "name": "number",
+              "value": "={{ $json.telefoneCliente }}",
+              "type": "string"
+            },
+            {
+              "id": "83a8097c-75fc-49c1-b277-c87b0825a785",
+              "name": "nomeCliente",
+              "value": "={{ $json.nomeCliente }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "0b4f2974-b350-4150-b11b-098d1b64b0b7",
+      "name": "Formalizar",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        600,
+        360
+      ]
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "96efa563-ea00-44e8-aba4-d584b8b2426b",
+      "name": "Loop Over Items",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        1040,
+        360
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "1f816de9-4d85-4f2f-91d4-a866914d601d",
+      "name": "Limit",
+      "type": "n8n-nodes-base.limit",
+      "typeVersion": 1,
+      "position": [
+        1440,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "amount": 1.2
+      },
+      "id": "da5c8e42-de30-4874-a6f6-8d91392456f0",
+      "name": "Wait",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1240,
+        460
+      ],
+      "webhookId": "af7151db-83d9-495c-b9eb-65e02b8dcb29"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c8fe0a2a-65e7-4542-add3-ae4a31f67fc9",
+              "name": "Modelos",
+              "value": "={{ (() => { \n    const data = $('GetModelos').item.json; \n    return { modelo: data.modelo, preço: data.preço }; \n})() }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "31123f48-de9c-4fac-966b-48ba0adfdb48",
+      "name": "modelos",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1240,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "resource": "messages-api",
+        "operation": "sendImage",
+        "instanceName": "LeonardoCandianiAI",
+        "remoteJid": "={{ $('Formalizar').item.json.number }}",
+        "media": "={{ $json.link }}",
+        "caption": "={{ $('GetModelos').item.json.modelo }}!\nValor: *{{ $json['preço'] }}*"
+      },
+      "id": "7d6af5fe-fd0a-4bd4-a351-961c302b4bda",
+      "name": "Enviar Imagem",
+      "type": "n8n-nodes-evolution-api.httpBin",
+      "typeVersion": 1,
+      "position": [
+        1440,
+        460
+      ],
+      "credentials": {
+        "httpbinApi": {
+          "id": "xBIa0AB4zc4lzLzq",
+          "name": "Evolution account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "817f12c4-7d2a-45bd-8c12-74ab0c196308",
+              "name": "response",
+              "value": "=As imagens e os modelos já foram enviados com sucesso! Pergunte agora, somente qual o modelo enviado que o usuário mais gostou. ",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "d47cd16c-d846-441c-8c11-2997c2ba7784",
+      "name": "Resposta para o Agente",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1660,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "tableId": "imagens",
+        "filterType": "none"
+      },
+      "id": "6eb3e212-7df1-49ec-b19f-ba060f0a1763",
+      "name": "GetModelos",
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        820,
+        360
+      ],
+      "credentials": {
+        "supabaseApi": {
+          "id": "noMiZwQJTenSf6HQ",
+          "name": "Supabase account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Execute Workflow Trigger": {
+      "main": [
+        [
+          {
+            "node": "Formalizar",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Formalizar": {
+      "main": [
+        [
+          {
+            "node": "GetModelos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [
+          {
+            "node": "modelos",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Limit": {
+      "main": [
+        [
+          {
+            "node": "Resposta para o Agente",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "Enviar Imagem",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "modelos": {
+      "main": [
+        [
+          {
+            "node": "Limit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Enviar Imagem": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GetModelos": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "ebccbb76-49a2-4a8c-8245-4f13c61e8ffe",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "265bc4d30f5c69bfba8516d0b7d34b0151bcf5e5f7614cbfab71a238c9a51f26"
+  },
+  "id": "6TtqtedOoEySdBsr",
+  "tags": [
+    {
+      "createdAt": "2024-12-02T02:24:59.511Z",
+      "updatedAt": "2024-12-02T02:24:59.511Z",
+      "id": "sgUXSVOL69LJU6c7",
+      "name": "Youtube"
+    }
+  ]
+}

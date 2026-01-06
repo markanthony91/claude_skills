@@ -4,15 +4,20 @@ Coleção de workflows do n8n para automação e integração com IA.
 
 ## Sobre
 
-Esta pasta contém **43 workflows validados** exportados do n8n, incluindo agentes de IA, integrações com APIs e automações diversas.
+Esta pasta contém **46 workflows validados** exportados do n8n, incluindo agentes de IA, integrações com APIs e automações diversas.
 
-**Data de importação:** 06/01/2026
-**Origem:** `/home/marcelo/Downloads/teste_backup_workflow_n8n/`
+**Data de importação inicial:** 06/01/2026
+**Última atualização:** 06/01/2026
+**Origens:**
+- `/home/marcelo/Downloads/teste_backup_workflow_n8n/` (43 workflows)
+- `/home/marcelo/Downloads/agente_ia_bdr/` (1 workflow)
+- `/home/marcelo/Downloads/Vendedor_de_iPhone_v0.1_LeonardoCandiani/` (2 workflows)
 
 ## Categorias de Workflows
 
 ### 🤖 Agentes de IA e RAG
 - **Agent CLS** - Agente CLS
+- **Agente_IA_BDR** - Agente de IA para BDR (Business Development Representative)
 - **AGENTE DE IA RAG v0.1 - LEONARDO CANDIANI** - Sistema RAG completo
 - **Agent Conversacional Travel** - Agente conversacional para viagens
 - **Agent see, speak** - Agente com capacidades visuais e de fala
@@ -55,6 +60,10 @@ Esta pasta contém **43 workflows validados** exportados do n8n, incluindo agent
 - **lab print post** - Laboratório de posts
 - **Relatório teste** - Geração de relatórios
 
+### 💼 Vendas e E-commerce
+- **Vendedor de iPhone v0.1 - YouTube** - Bot vendedor de iPhones (workflow principal)
+- **Modelos_iPhone** - Base de dados de modelos de iPhone (arquivo de suporte)
+
 ### 🧪 Testes e Desenvolvimento
 - **Disparador Test** - Testes de disparadores
 - **Disparo_** - Testes de disparo
@@ -63,7 +72,6 @@ Esta pasta contém **43 workflows validados** exportados do n8n, incluindo agent
 - **teste_work** - Workflow de teste
 - **Renegociação AlphavilleOLD** - Sistema de renegociação
 - **saiu - Grupo** - Gestão de grupos
-- **Vendedor de iPhone v0.1 - YouTube** - Bot vendedor
 
 ## 🚀 Importação
 
@@ -122,9 +130,10 @@ Para adicionar novos workflows:
 ## 📝 Notas
 
 - Arquivos com menos de 1KB foram excluídos (provavelmente corrompidos ou vazios)
-- Total de workflows válidos: **43**
+- Total de workflows válidos: **46** (43 iniciais + 3 adicionados)
 - Todos os metadados pessoais (IDs, timestamps) são removidos na importação
 - O script detecta automaticamente o header de autenticação correto
+- **SECURITY:** Secrets foram removidos e substituídos por placeholders antes do commit
 
 ## 🔗 Referências
 

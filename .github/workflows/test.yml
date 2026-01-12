@@ -1,0 +1,175 @@
+name: Test Suite
+
+on:
+  push:
+    branches: [ main, develop, claude/* ]
+  pull_request:
+    branches: [ main, develop ]
+  schedule:
+    # Run tests daily at 2 AM UTC
+    - cron: '0 2 * * *'
+
+jobs:
+  test:
+    name: Test on Python ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.8', '3.9', '3.10', '3.11']
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+        cache: 'pip'
+
+    - name: Install Chrome (for Selenium tests)
+      uses: browser-actions/setup-chrome@latest
+      with:
+        chrome-version: stable
+
+    - name: Install ChromeDriver
+      run: |
+        CHROME_VERSION=$(google-chrome --version | cut -d ' ' -f3 | cut -d '.' -f1)
+        wget -q "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_${CHROME_VERSION}" -O /tmp/chromedriver_version
+        CHROMEDRIVER_VERSION=$(cat /tmp/chromedriver_version)
+        wget -q "https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip" -O /tmp/chromedriver.zip
+        sudo unzip -o /tmp/chromedriver.zip -d /usr/local/bin/
+        sudo chmod +x /usr/local/bin/chromedriver
+
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y xvfb libgtk-3-0 libnotify4 libnss3 libxtst6 xdg-utils
+
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip setuptools wheel
+        pip install -r requirements-dev.txt
+        # Install project dependencies if they exist
+        if [ -f captura_cameras/requirements.txt ]; then pip install -r captura_cameras/requirements.txt; fi
+        if [ -f captura_cameras_debug/requirements.txt ]; then pip install -r captura_cameras_debug/requirements.txt; fi
+
+    - name: Create test environment variables
+      run: |
+        echo "AIVISUAL_USER=test@example.com" >> $GITHUB_ENV
+        echo "AIVISUAL_PASS=test_password_123" >> $GITHUB_ENV
+        echo "FILE_SERVER_USER=test@example.com" >> $GITHUB_ENV
+        echo "FILE_SERVER_PASS=test_password_456" >> $GITHUB_ENV
+        echo "ALPHAVILLE_USER=test_user" >> $GITHUB_ENV
+        echo "ALPHAVILLE_PASS=test_password_789" >> $GITHUB_ENV
+
+    - name: Lint with flake8
+      run: |
+        # Stop the build if there are Python syntax errors or undefined names
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        # Treat all errors as warnings (project has many legacy issues)
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
+    - name: Type check with mypy (non-blocking)
+      continue-on-error: true
+      run: |
+        mypy captura_cameras captura_cameras_debug sistema_recupera --ignore-missing-imports || true
+
+    - name: Run unit tests
+      run: |
+        pytest tests/unit/ -v --cov --cov-report=xml --cov-report=term
+
+    - name: Run integration tests
+      run: |
+        # Use xvfb for headless browser testing
+        xvfb-run -a pytest tests/integration/ -v --cov --cov-append --cov-report=xml --cov-report=term
+
+    - name: Run all tests with coverage
+      run: |
+        xvfb-run -a pytest tests/ -v --cov --cov-report=xml --cov-report=html --cov-report=term-missing
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./coverage.xml
+        flags: unittests
+        name: codecov-umbrella
+        fail_ci_if_error: false
+
+    - name: Archive coverage reports
+      uses: actions/upload-artifact@v3
+      with:
+        name: coverage-report-${{ matrix.python-version }}
+        path: htmlcov/
+
+    - name: Archive test results
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results-${{ matrix.python-version }}
+        path: |
+          htmlcov/
+          .pytest_cache/
+
+  security-scan:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install security tools
+      run: |
+        pip install bandit safety
+
+    - name: Run bandit security scan
+      run: |
+        bandit -r captura_cameras captura_cameras_debug sistema_recupera -f json -o bandit-report.json || true
+        bandit -r captura_cameras captura_cameras_debug sistema_recupera
+
+    - name: Check for known vulnerabilities with safety
+      run: |
+        safety check --json || true
+
+    - name: Upload security reports
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: security-reports
+        path: |
+          bandit-report.json
+
+  code-quality:
+    name: Code Quality Check
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        pip install black isort flake8 pylint
+
+    - name: Check code formatting with black
+      run: |
+        black --check captura_cameras captura_cameras_debug sistema_recupera || true
+
+    - name: Check import sorting with isort
+      run: |
+        isort --check-only captura_cameras captura_cameras_debug sistema_recupera || true
+
+    - name: Run pylint (non-blocking)
+      continue-on-error: true
+      run: |
+        pylint captura_cameras captura_cameras_debug sistema_recupera --exit-zero

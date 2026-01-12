@@ -66,6 +66,14 @@ imagens_simples/
 Thumbs.db
 desktop.ini
 
+# Testing
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.hypothesis/
+
 # Chrome drivers
 chromedriver
 chromedriver.exe
